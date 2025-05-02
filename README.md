@@ -11,7 +11,7 @@
 #Banco#
   -MongoDB
 
-#Descriçõe#  
+#Descrições#  
 
   -O projeto encontra-se em desenvolvimento, utilizando o conjunto de ferramentas 
    baseado no MERN.
