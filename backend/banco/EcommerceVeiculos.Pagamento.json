@@ -1,0 +1,32 @@
+[{
+  "_id": {
+    "$oid": "6820dc63230d4148a5b50f84"
+  },
+  "formaPagamento": "Cartão de Credito",
+  "statusPagamento": "Pago",
+  "dataPagamento": {
+    "$date": "2025-05-11T19:00:00.000Z"
+  },
+  "pedidoId": {
+    "$oid": "6820fba6009e9f118c09d6f3"
+  },
+  "usuarioId": {
+    "$oid": "6820db30230d4148a5b50f80"
+  }
+},
+{
+  "_id": {
+    "$oid": "6821082b3d9396f8773350a1"
+  },
+  "formaPagamento": "Pix",
+  "statusPagamento": "Pago",
+  "dataPagamento": {
+    "$date": "2025-05-11T20:27:23.394Z"
+  },
+  "pedidoId": {
+    "$oid": "682108253d9396f8773350a0"
+  },
+  "usuarioId": {
+    "$oid": "6820db30230d4148a5b50f80"
+  }
+}]

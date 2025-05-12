@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6820f428009e9f118c09d6d6"
+  },
+  "veiculoId": {
+    "$oid": "6820d9ed230d4148a5b50f7d"
+  },
+  "quantidadeDisponivel": 1
+},
+{
+  "_id": {
+    "$oid": "682108953d9396f8773350a5"
+  },
+  "veiculoId": {
+    "$oid": "682108913d9396f8773350a2"
+  },
+  "quantidadeDisponivel": 4
+},
+{
+  "_id": {
+    "$oid": "682108953d9396f8773350a6"
+  },
+  "veiculoId": {
+    "$oid": "682108913d9396f8773350a3"
+  },
+  "quantidadeDisponivel": 1
+},
+{
+  "_id": {
+    "$oid": "682108953d9396f8773350a7"
+  },
+  "veiculoId": {
+    "$oid": "682108913d9396f8773350a4"
+  },
+  "quantidadeDisponivel": 2
+}]

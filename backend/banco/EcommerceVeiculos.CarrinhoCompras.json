@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "6820f5bd009e9f118c09d6e9"
+  },
+  "usuarioId": {
+    "$oid": "6820db30230d4148a5b50f80"
+  },
+  "veiculoEscolhido": [
+    {
+      "quantidade": 1,
+      "veiculoId": {
+        "$oid": "6820d9ed230d4148a5b50f7d"
+      }
+    }
+  ]
+}]

@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "6820d9ed230d4148a5b50f7d"
+  },
+  "marca": "Toyota",
+  "modelo": "Hilux",
+  "cor": "Prata",
+  "valor": 120000,
+  "descricao": "Manual 6 machas, completa",
+  "status": "Usado",
+  "ano": 2012,
+  "quilometragem": 98500
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a2"
+  },
+  "marca": "Chevrolet",
+  "modelo": "Onix LT",
+  "cor": "Branco",
+  "valor": 78000,
+  "descricao": "1.0 Turbo, completo",
+  "status": "novo",
+  "ano": 2023,
+  "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a3"
+  },
+  "marca": "Volkswagen",
+  "modelo": "Gol G6",
+  "cor": "Vermelho",
+  "valor": 39000,
+  "descricao": "1.6 Flex, completo, ótimo estado",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 72000
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a4"
+  },
+  "marca": "Fiat",
+  "modelo": "Strada Freedom",
+  "cor": "Cinza",
+  "valor": 105000,
+  "descricao": "1.3 Flex, cabine dupla",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0
+}]

@@ -1,0 +1,44 @@
+[{
+  "_id": {
+    "$oid": "6820fba6009e9f118c09d6f3"
+  },
+  "usuarioId": {
+    "$oid": "6820db30230d4148a5b50f80"
+  },
+  "veiculoEscolhido": [
+    {
+      "veiculoId": {
+        "$oid": "6820d9ed230d4148a5b50f7d"
+      },
+      "quantidade": 1,
+      "valorVeiculo": 120000
+    }
+  ],
+  "valorTotal": 120000,
+  "status": "pago",
+  "dataPedido": {
+    "$date": "2025-05-11T15:00:00.000Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682108253d9396f8773350a0"
+  },
+  "usuarioId": {
+    "$oid": "6820db30230d4148a5b50f80"
+  },
+  "veiculoEscolhido": [
+    {
+      "veiculoId": {
+        "$oid": "6820d9ed230d4148a5b50f7d"
+      },
+      "quantidade": 1,
+      "valorVeiculo": 120000
+    }
+  ],
+  "valorTotal": 120000,
+  "status": "pago",
+  "dataPedido": {
+    "$date": "2025-05-11T20:27:17.459Z"
+  }
+}]
