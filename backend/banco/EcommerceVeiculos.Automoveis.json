@@ -49,4 +49,69 @@
   "status": "novo",
   "ano": 2024,
   "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "6824fb3c5dd8b6192d947e17"
+  },
+  "marca": "Jeep",
+  "modelo": "Compass",
+  "cor": "Preto",
+  "valor": 160000,
+  "descricao": "2.0 Diesel, 4x4",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 35000
+},
+{
+  "_id": {
+    "$oid": "6824fa4d5dd8b6192d947e15"
+  },
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "cor": "Preta",
+  "valor": 150000,
+  "descricao": "2.0 XEI, Flex, Completo",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "6824fc755dd8b6192d947e19"
+  },
+  "marca": "Fiat",
+  "modelo": "Uno",
+  "cor": "Cinza",
+  "valor": 40000,
+  "descricao": "1.0, Flex, Completo Em Otimo Estado",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 70000
+},
+{
+  "_id": {
+    "$oid": "6824fd0c5dd8b6192d947e1b"
+  },
+  "marca": "Fiat",
+  "modelo": "Palio Attractive",
+  "cor": "Vermelho",
+  "valor": 38131,
+  "descricao": "1.4 8V, Flex, Completo Em Otimo Estado",
+  "status": "usado",
+  "ano": 2014,
+  "quilometragem": 89000
+},
+{
+  "_id": {
+    "$oid": "6824fde65dd8b6192d947e1c"
+  },
+  "marca": "Bmw",
+  "modelo": "320i",
+  "cor": "Azul",
+  "valor": 217800,
+  "descricao": "2.0 16V TURBO GASOLINA M SPORT AUTOMÁTICO",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 58000
 }]
