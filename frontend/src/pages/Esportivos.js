@@ -1,25 +1,18 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
 import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
-import car from './cars/carros-esportivos.png'
 import logo from './logo/logo.png'
 
 
 
-function Home() {
+function Esportivos() {
   const navigate = useNavigate();
-  const handleLogin = () => {
-    navigate('/');
-  };
+  
 
   return (
     <div className="Home_container">
       <div className="TopColor">
         <ul className="nav-menu">
-          <li><Link to="/home"></Link><img src={logo} alt='Nossa Logo' classname='ImagemLogo'/>
-          </li>
+          <li><Link to="/home"></Link><img src={logo} alt='Nossa Logo' classname='ImagemLogo'/></li>
           <li>
             <input type="carros" placeholder="Pesquisa" />
           </li>
@@ -30,16 +23,8 @@ function Home() {
         </ul>
       </div>
 
-      <div className="MedioColor">
-        <Slider dots={true} infinite={true} speed={500} slidestoshow={1} slidesToScroll={1}>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-            <div><img src={car} alt='cartest' className='carroY'/></div>
-        </Slider>
-      </div>
+      
+      
       <div className="itens"> 
        <ul>
         <li>item1</li>
@@ -72,5 +57,5 @@ function Home() {
   );
 }
 
-export default Home;
+export default Esportivos;
 
