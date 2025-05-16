@@ -1,5 +1,6 @@
 import './style.css';
 import { useNavigate } from 'react-router-dom';
+import logo from './logo/logoLogin.png'
 
 function Login() {
   const navigate = useNavigate();
@@ -9,11 +10,17 @@ function Login() {
 
   return (
     <div className="Login_container">
-      <h2>Login</h2>
-      <input type="text" placeholder="Usuário" />
-      <input type="password" placeholder="Senha" />
-      <button onClick={handleLogin}>Entrar</button>
-    </div>
+        <div className='LeftColor'></div>
+        <div className='LoginText'>
+            <img src={logo} alt='Nossa logo' className='ImagemLogo'/>
+            <h1>Login</h1>
+        </div>
+        <div className='textFields'>
+            <input type='Email' placeholder='Email'/>
+            <input type='Senha' placeholder='Senha'/>
+            <button onClick={handleLogin}>Entrar</button>
+          </div>
+        </div>
   );
 }
 
