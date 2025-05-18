@@ -1,6 +1,6 @@
 import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
-import logo from './logo/logo.png'
+import logo from './logo/logo.png';
 
 function Populares(){
     const navigate = useNavigate();

@@ -6,6 +6,7 @@ import Esportivos from './pages/Esportivos';
 import Populares from './pages/Populares';
 import Usados from './pages/Usados';
 import './App.css';
+import ItemSelecionado from './components/ItemSelecionado';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/esportivos" element={<Esportivos />}/>
           <Route path="/populares" element={<Populares />}/>
           <Route path="/usados" element={<Usados />}/>
+          <Route path='/itens/:id' element={<ItemSelecionado/>} />
         </Routes>
       </div>
     </Router>

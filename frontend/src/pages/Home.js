@@ -14,7 +14,7 @@ function Home(){
     };
 
     return (
-        <div className='Home_container'>
+    <div className='Home_container'>
         <div className='TopColor'>
             <ul className="nav-menu">
                 <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo'/></Link></li>
@@ -37,9 +37,7 @@ function Home(){
                 <div><img src={car} alt='cartest' className='carroY'/></div>
             </Slider>
         </div>
-        <div className="itens">
             <ListaDeItens />
-        </div>
 
     </div>
     );
