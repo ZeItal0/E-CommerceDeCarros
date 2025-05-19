@@ -29,10 +29,10 @@ function ListaDeItens() {
         <ul>
           {itens.map((item) => (
             <li key={item._id}>
-              <Link to={`/itens/${item._id}`}>
+              <Link to={`/itens/${item._id}`} className='link-item'>
               <img src={car} alt='cartest' className='carroimg'/>
-              <strong>Marca:</strong> {item.marca},
-              <strong>Valor:</strong> {item.valor},
+              <a><strong>Marca:</strong> {item.marca}</a>
+              <a><strong id='valorcolor'>Valor:</strong> {item.valor}</a>
               </Link>
             </li>
           ))}

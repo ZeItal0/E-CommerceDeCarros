@@ -92,3 +92,14 @@
   width: 200px;
   height: auto;
 }
+.itens a {
+  display: flex;
+}
+#valorcolor{
+  color:#63BDB5;
+
+
+}
+.link-item{
+  text-decoration: none;
+}
