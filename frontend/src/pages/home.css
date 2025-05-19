@@ -7,36 +7,42 @@
   flex-wrap: nowrap;
   gap: 10px;
 }
+
 .TopColor {
-    background-color: #15696F;
-    padding: 1px 20px;
-    gap: 20px;
-    flex: 1;
-    min-width: 0;
+  background-color: #15696F;
+  padding: 1px 20px;
+  gap: 20px;
+  flex: 1;
+  min-width: 0;
 }
+
 .TopColor ul {
-    list-style: none;
-    display: flex;
-    gap: 70px;
+  list-style: none;
+  display: flex;
+  gap: 70px;
 }
-.TopColor li{
-    display: flex;
-    align-items: center;
-    margin-top: 1px;
+
+.TopColor li {
+  display: flex;
+  align-items: center;
+  margin-top: 1px;
 }
+
 .TopColor input {
-    width: 400px;
-    max-width: 500px;
-    padding: 3px 10px;
-    margin: -1px 90px;
-    font-size: 1rem;
-    border-color: transparent;
-    border-radius: 9px;
+  width: 400px;
+  max-width: 500px;
+  padding: 3px 10px;
+  margin: -1px 90px;
+  font-size: 1rem;
+  border-color: transparent;
+  border-radius: 9px;
 }
+
 .TopColor a {
-    text-decoration: none;
-    color: #EEF2F0;
+  text-decoration: none;
+  color: #EEF2F0;
 }
+
 .MedioColor {
   background-color: #858585;
   padding: 40px 0;
@@ -56,6 +62,7 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
 .carroY {
   padding: 0 10px;
   box-sizing: border-box;
@@ -68,11 +75,13 @@
   margin-left: auto;
   margin-top: 10px;
 }
-.itens li{
- list-style: none;
+
+.itens li {
+  list-style: none;
   display: flex;
   white-space: nowrap;
 }
+
 .itens ul {
   list-style: none;
   display: flex;
@@ -84,20 +93,85 @@
   max-width: 100%;
   box-sizing: border-box;
 }
+
 .ImagemLogo {
   width: 100px;
   height: auto;
 }
+
 .carroimg {
   width: 200px;
   height: auto;
 }
+
+.selecionado {
+  width: 500px;
+  height: auto;
+}
+
 .link-item a {
   display: flex;
 }
-#valorcolor{
-  color:#63BDB5;
+
+#valorcolor {
+  color: #63BDB5;
 }
-.link-item{
+
+.link-item {
   text-decoration: none;
+}
+
+.nomeDoItem {
+  font-size: 20px;
+}
+
+.produto-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+}
+
+.nomeDoItem {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modeloDoItem {
+  font-size: 18px;
+}
+
+.info-down {
+  text-align: left;
+}
+
+.info-left {
+  display: flex;
+}
+
+.info-left button {
+  width: 190%;
+  max-width: 300px;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #63BDB5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.info-left button:hover {
+  background-color: #15696F;
+}
+.cor {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 1px solid #000; /* opcional: borda para destaque */
+  vertical-align: middle;
 }

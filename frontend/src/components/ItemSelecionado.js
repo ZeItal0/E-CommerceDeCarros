@@ -37,32 +37,44 @@ function ItemSelecionado() {
 
   return item ? (
     <div className='Home_container'>
-                <div className='TopColor'>
-                    <ul className="nav-menu">
-                        <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo'/></Link></li>
-                        <li><input type='carros' placeholder='Pesquisa'/></li>
-                        <li><Link to="/esportivos">Esportivos</Link></li>
-                        <li><Link to="/populares">Populares</Link></li>
-                        <li><Link to="/usados">Usados</Link></li>
-                        <a id='carrinho' href='#'>Carrinho</a>
-                        <a></a>
-                    </ul>
-                </div>
-                
-                <div>
-                <img src={car} alt='cartest' className='carroimg'/>
-                 <strong>Valor:</strong> {item.valor},
-                  <strong>Cor:</strong> {item.cor},
-                  <button>Carrinho</button>
-                  <button>Comprar</button>
-                </div>
-                <strong>Marca:</strong> {item.marca},
-                <strong>Modelo:</strong> {item.modelo},
-                 {/* <ListaDeItens />       */}
+      <div className='TopColor'>
+        <ul className="nav-menu">
+          <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
+          <li><input type='carros' placeholder='Pesquisa' /></li>
+          <li><Link to="/esportivos">Esportivos</Link></li>
+          <li><Link to="/populares">Populares</Link></li>
+          <li><Link to="/usados">Usados</Link></li>
+          <a id='carrinho' href='#'>Carrinho</a>
+        </ul>
+      </div>
+
+      <div className='produto-wrapper'>
+        <div className='produto'>
+          <div className='info-left'>
+            <img src={car} alt='cartest' className='selecionado' />
+            <div className='top'>
+              <p><strong>Valor:</strong> {item.valor}</p>
+              <p>
+                <strong>Cor:</strong> {item.cor}
+                <span className='cor' style={{backgroundColor: item.cor}}>
+                </span>
+              </p>
+              <button>Carrinho</button><br/>
+              <button>Comprar</button>
+            </div>
+          </div>
+          <div className='info-down'>
+            <strong className='nomeDoItem'>Marca: {item.marca}</strong>
+            <strong className='modeloDoItem'> {item.modelo}</strong>
+          </div>
         </div>
-      ) : (
-        <p>Nenhum automóvel encontrado.</p>
+      </div>
+      <ListaDeItens />
+    </div>
+  ) : (
+    <p>Nenhum automóvel encontrado.</p>
   );
+
 }
 
 export default ItemSelecionado;

@@ -38,6 +38,9 @@
     border-radius: 20px;
     cursor: pointer;
 }
+.textFields button:hover {
+  background-color: #15696F;
+}
 .LoginText {
     display: flex;
     flex-direction: column;
