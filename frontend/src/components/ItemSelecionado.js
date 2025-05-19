@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../pages/logo/logo.png';
 import ListaDeItens from "../components/ListaDeItens";
+import car from '../pages/cars/carros-esportivos.png'
 
 function ItemSelecionado() {
   const { id } = useParams();
@@ -47,10 +48,16 @@ function ItemSelecionado() {
                         <a></a>
                     </ul>
                 </div>
+                
+                <div>
+                <img src={car} alt='cartest' className='carroimg'/>
+                 <strong>Valor:</strong> {item.valor},
+                  <strong>Cor:</strong> {item.cor},
+                  <button>Carrinho</button>
+                  <button>Comprar</button>
+                </div>
                 <strong>Marca:</strong> {item.marca},
                 <strong>Modelo:</strong> {item.modelo},
-                <strong>Cor:</strong> {item.cor},
-                <strong>Valor:</strong> {item.valor},
                  {/* <ListaDeItens />       */}
         </div>
       ) : (
