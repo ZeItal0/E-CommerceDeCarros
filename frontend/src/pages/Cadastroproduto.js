@@ -2,7 +2,7 @@ import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logo.png'
 
-function Esportivos(){
+function Cadastroproduto(){
     const navigate = useNavigate();
 
     return (
@@ -36,4 +36,4 @@ function Esportivos(){
     );
 
 };
-export default Esportivos;
+export default Cadastroproduto;
