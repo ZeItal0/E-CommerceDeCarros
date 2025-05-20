@@ -27,7 +27,7 @@ function ListaDeItens() {
     <div className="itens">
       {itens.length > 0 ? ( 
         <ul>
-          {itens.filter((item) => item.status === 'novo').map((item) => (
+          {itens.map((item) => (
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={car} alt='cartest' className='carroimg' />

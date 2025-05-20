@@ -1,57 +1,86 @@
-.Login_container{
+.login-wrapper {
     display: flex;
-    flex-direction: row;
-    background-color: #EEF2F0;
+    width: 100%;
     height: 100vh;
 }
-.LeftColor{
-    background-color: #63BDB5;
-    flex: 2;
+
+.login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #63BDB5, #15696F);
+    color: #EEF2F0;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    padding: 30px;
 }
-.textFields{
+
+.left-content {
+    text-align: center;
+}
+
+.left-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.login-right {
     flex: 1;
+    background-color: #fff;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 22%;
-    box-sizing: border-box;
 }
-.textFields input {
-    width: 190%;
-    max-width: 600px;
-    padding: 10px;
+
+.login-logo {
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.login-title {
+    color: #15696F;
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 12px;
     margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
     font-size: 1rem;
 }
-.textFields button {
-    width: 80%;
-    max-width: 300px;
-    padding: 15px;
-    font-size: 1rem;
+
+.login-input:focus {
+    border-bottom-color: #63BDB5;
+}
+
+.login-button {
     background-color: #63BDB5;
-    color: #fff;
+    color: white;
+    padding: 15px 90px;
     border: none;
     border-radius: 20px;
+    font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 20px;
 }
-.textFields button:hover {
-  background-color: #15696F;
+.login-button:hover {
+    background-color: #15696F;
 }
-.LoginText {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.criar-Conta {
+    text-align: center;
+    font-size: 0.9rem;
 }
-.LoginText h1 {
-    color: #15696F;
-}
-.ImagemLogo{
-    width: 850px;
-    height: auto;
+.login-right {
+    justify-content: center;
 }
 
 
