@@ -25,7 +25,7 @@ function ListaDeItens() {
 
   return (
     <div className="itens">
-      {itens.length > 0 ? (
+      {itens.length > 0 ? ( 
         <ul>
           {itens.map((item) => (
             <li key={item._id}>
