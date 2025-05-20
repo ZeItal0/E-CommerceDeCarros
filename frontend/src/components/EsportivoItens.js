@@ -27,7 +27,7 @@ function EsportivoItens() {
     <div className="itens">
       {itens.length > 0 ? ( 
         <ul>
-          {itens.filter((item) => item.tipo === 'esportivo').map((item) => ( //Esperando incrementação do "esportivo" ao banco de dados
+          {itens.filter((item) => item.categoria === 'Esportivo' && item.status === 'novo').map((item) => ( //Esperando incrementação do "esportivo" ao banco de dados
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={car} alt='cartest' className='carroimg' />
