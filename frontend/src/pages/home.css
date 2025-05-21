@@ -57,16 +57,14 @@
 }
 
 .slick-slide img {
-  width: 100%;
-  height: auto;
+  width: 190px;
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
-.carroY {
-  padding: 0 10px;
-  box-sizing: border-box;
-}
 
 #carrinho {
   text-decoration: none;
@@ -100,13 +98,15 @@
 }
 
 .carroimg {
-  width: 200px;
-  height: auto;
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px; 
 }
 
 .selecionado {
   width: 500px;
-  height: auto;
+  height: 400px;
 }
 
 .link-item a {

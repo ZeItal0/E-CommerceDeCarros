@@ -1,17 +1,35 @@
+import React, { useState, useEffect } from "react";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
-import car from './cars/carros-esportivos.png'
-import logo from './logo/logo.png'
+import logo from './logo/logo.png';
 import ListaDeItens from "../components/ListaDeItens";
 
 function Home(){
     const navigate = useNavigate();
+    const [carros, setCarros] = useState([]);
     const handleLogin = () => {
         navigate('/');
     };
+    useEffect(() =>{
+        const fetchItens = async () => {
+            const res = await fetch('http://localhost:5000/api/itens');
+            const data = await res.json();
+            setCarros(data.slice(0, 10));
+        };
+        fetchItens();
+    }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 7,
+        slidesToScroll: 1,
+
+    }
 
     return (
     <div className='Home_container'>
@@ -28,14 +46,12 @@ function Home(){
             </ul>
         </div>
         <div className='MedioColor'>
-            <Slider dots={true} infinite={true} speed={500} slidesToShow={7} slidesToScroll={1}>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
-                <div><img src={car} alt='cartest' className='carroY'/></div>
+            <Slider {...settings}>
+                {carros.map((item) => (
+                    <div key={item._id} className="carousel-item">
+                        <img src={`http://localhost:5000${item.imagem}`}alt={`${item.marca} ${item.modelo}`}className='carroY'/>
+                    </div>
+                ))}
             </Slider>
         </div>
             <ListaDeItens />

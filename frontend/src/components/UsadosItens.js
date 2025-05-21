@@ -30,7 +30,7 @@ function UsadoItens() {
           {itens.filter((item) => item.status === 'usado').map((item) => (
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
-                <img src={car} alt='cartest' className='carroimg' />
+                <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
                 <a><strong>Marca:</strong> {item.marca} {item.modelo}</a>
                 <a><strong id='valorcolor'>Valor:</strong> {item.valor}</a>
               </Link>
