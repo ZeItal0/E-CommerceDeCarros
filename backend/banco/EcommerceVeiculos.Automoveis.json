@@ -1,128 +1,126 @@
-[
-  {
-    "_id": {
-      "$oid": "6820d9ed230d4148a5b50f7d"
-    },
-    "marca": "Toyota",
-    "modelo": "Hilux",
-    "categoria": "Esportivo",
-    "cor": "Silver",
-    "valor": 120000,
-    "descricao": "Manual 6 machas, completa",
-    "status": "Usado",
-    "ano": 2012,
-    "quilometragem": 98500
+[{
+  "_id": {
+    "$oid": "6820d9ed230d4148a5b50f7d"
   },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a2"
-    },
-    "marca": "Chevrolet",
-    "modelo": "Onix LT",
-    "categoria": "Popular",
-    "cor": "White",
-    "valor": 78000,
-    "descricao": "1.0 Turbo, completo",
-    "status": "novo",
-    "ano": 2023,
-    "quilometragem": 0
+  "marca": "Toyota",
+  "modelo": "Hilux",
+  "categoria": "Esportivo",
+  "cor": "Silver",
+  "valor": 120000,
+  "descricao": "Manual 6 machas, completa",
+  "status": "Usado",
+  "ano": 2012,
+  "quilometragem": 98500
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a2"
   },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a3"
-    },
-    "marca": "Volkswagen",
-    "modelo": "Gol G6",
-    "categoria": "Popular",
-    "cor": "Red",
-    "valor": 39000,
-    "descricao": "1.6 Flex, completo, ótimo estado",
-    "status": "usado",
-    "ano": 2016,
-    "quilometragem": 72000
+  "marca": "Chevrolet",
+  "modelo": "Onix LT",
+  "categoria": "Popular",
+  "cor": "White",
+  "valor": 78000,
+  "descricao": "1.0 Turbo, completo",
+  "status": "novo",
+  "ano": 2023,
+  "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a3"
   },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a4"
-    },
-    "marca": "Fiat",
-    "modelo": "Strada Freedom",
-    "categoria": "Popular",
-    "cor": "Gray",
-    "valor": 105000,
-    "descricao": "1.3 Flex, cabine dupla",
-    "status": "novo",
-    "ano": 2024,
-    "quilometragem": 0
+  "marca": "Volkswagen",
+  "modelo": "Gol G6",
+  "categoria": "Popular",
+  "cor": "Red",
+  "valor": 39000,
+  "descricao": "1.6 Flex, completo, ótimo estado",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 72000
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a4"
   },
-  {
-    "_id": {
-      "$oid": "6824fb3c5dd8b6192d947e17"
-    },
-    "marca": "Jeep",
-    "modelo": "Compass",
-    "categoria": "Popular",
-    "cor": "Black",
-    "valor": 160000,
-    "descricao": "2.0 Diesel, 4x4",
-    "status": "usado",
-    "ano": 2020,
-    "quilometragem": 35000
+  "marca": "Fiat",
+  "modelo": "Strada Freedom",
+  "categoria": "Popular",
+  "cor": "Gray",
+  "valor": 105000,
+  "descricao": "1.3 Flex, cabine dupla",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "6824fb3c5dd8b6192d947e17"
   },
-  {
-    "_id": {
-      "$oid": "6824fa4d5dd8b6192d947e15"
-    },
-    "marca": "Toyota",
-    "modelo": "Corolla",
-    "categoria": "Popular",
-    "cor": "Black",
-    "valor": 150000,
-    "descricao": "2.0 XEI, Flex, Completo",
-    "status": "novo",
-    "ano": 2024,
-    "quilometragem": 0
+  "marca": "Jeep",
+  "modelo": "Compass",
+  "categoria": "Popular",
+  "cor": "Black",
+  "valor": 160000,
+  "descricao": "2.0 Diesel, 4x4",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 35000
+},
+{
+  "_id": {
+    "$oid": "6824fa4d5dd8b6192d947e15"
   },
-  {
-    "_id": {
-      "$oid": "6824fc755dd8b6192d947e19"
-    },
-    "marca": "Fiat",
-    "modelo": "Uno",
-    "categoria": "Popular",
-    "cor": "Gray",
-    "valor": 40000,
-    "descricao": "1.0, Flex, Completo Em Otimo Estado",
-    "status": "usado",
-    "ano": 2016,
-    "quilometragem": 70000
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "categoria": "Popular",
+  "cor": "Black",
+  "valor": 150000,
+  "descricao": "2.0 XEI, Flex, Completo",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0
+},
+{
+  "_id": {
+    "$oid": "6824fc755dd8b6192d947e19"
   },
-  {
-    "_id": {
-      "$oid": "6824fd0c5dd8b6192d947e1b"
-    },
-    "marca": "Fiat",
-    "modelo": "Palio Attractive",
-    "categoria": "Popular",
-    "cor": "Red",
-    "valor": 38131,
-    "descricao": "1.4 8V, Flex, Completo Em Otimo Estado",
-    "status": "usado",
-    "ano": 2014,
-    "quilometragem": 89000
+  "marca": "Fiat",
+  "modelo": "Uno",
+  "categoria": "Popular",
+  "cor": "Gray",
+  "valor": 40000,
+  "descricao": "1.0, Flex, Completo Em Otimo Estado",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 70000
+},
+{
+  "_id": {
+    "$oid": "6824fd0c5dd8b6192d947e1b"
   },
-  {
-    "_id": {
-      "$oid": "6824fde65dd8b6192d947e1c"
-    },
-    "marca": "Bmw",
-    "modelo": "320i",
-    "categoria": "Esportivo",
-    "cor": "Blue",
-    "valor": 217800,
-    "descricao": "2.0 16V Turbo Gasolina M Sport Automático",
-    "status": "usado",
-    "ano": 2020,
-    "quilometragem": 58000
-  }
-]
+  "marca": "Fiat",
+  "modelo": "Palio Attractive",
+  "categoria": "Popular",
+  "cor": "Red",
+  "valor": 38131,
+  "descricao": "1.4 8V, Flex, Completo Em Otimo Estado",
+  "status": "usado",
+  "ano": 2014,
+  "quilometragem": 89000
+},
+{
+  "_id": {
+    "$oid": "6824fde65dd8b6192d947e1c"
+  },
+  "marca": "Bmw",
+  "modelo": "320i",
+  "categoria": "Esportivo",
+  "cor": "Blue",
+  "valor": 217800,
+  "descricao": "2.0 16V Turbo Gasolina M Sport Automático",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 58000
+}]
