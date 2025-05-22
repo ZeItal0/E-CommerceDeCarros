@@ -57,8 +57,8 @@
 }
 
 .slick-slide img {
-  width: 190px;
-  height: 150px;
+  width: 160px;
+  height: 100px;
   object-fit: cover;
   border-radius: 10px;
   display: block;
