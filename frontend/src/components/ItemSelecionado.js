@@ -66,6 +66,7 @@ function ItemSelecionado() {
           <div className='info-down'>
             <strong className='nomeDoItem'>Marca: {item.marca}</strong>
             <strong className='modeloDoItem'> {item.modelo}</strong>
+            <strong className='modeloDoItem'> ({item.status})</strong>
           </div>
         </div>
       </div>

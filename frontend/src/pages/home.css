@@ -70,7 +70,6 @@
   text-decoration: none;
   color: #282828;
   white-space: nowrap;
-  margin-left: auto;
   margin-top: 10px;
 }
 
@@ -90,6 +89,9 @@
   justify-content: center;
   max-width: 100%;
   box-sizing: border-box;
+}
+.nav-link:hover{
+  color: #858585;
 }
 
 .ImagemLogo {
@@ -111,6 +113,9 @@
 
 .link-item a {
   display: flex;
+}
+.link-item:hover {
+  transform: scale(1.05);
 }
 
 #valorcolor {

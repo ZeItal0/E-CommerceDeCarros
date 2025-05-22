@@ -8,6 +8,7 @@ import Usados from './pages/Usados';
 import Cadastroproduto from './pages/Cadastroproduto';
 import './App.css';
 import ItemSelecionado from './components/ItemSelecionado';
+import Pesquisa from './components/Pesquisa';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/usados" element={<Usados />}/>
           <Route path='/itens/:id' element={<ItemSelecionado/>} />
           <Route path='/cadastroproduto' element={<Cadastroproduto/>}/>
+          <Route path='/pesquisa' element={<Pesquisa/>}/>
         </Routes>
       </div>
     </Router>

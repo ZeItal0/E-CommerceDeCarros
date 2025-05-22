@@ -25,10 +25,11 @@ function Home(){
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 600,
         slidesToShow: 7,
         slidesToScroll: 1,
-
+        autoplay: true,
+        autoplaySpeed: 3000,
     }
 
     return (
@@ -36,13 +37,12 @@ function Home(){
         <div className='TopColor'>
             <ul className="nav-menu">
                 <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo'/></Link></li>
-                <li><input type='carros' placeholder='Pesquisa'/></li>
-                <li><Link to="/esportivos">Esportivos</Link></li>
-                <li><Link to="/populares">Populares</Link></li>
-                <li><Link to="/usados">Usados</Link></li>
-                <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
+                <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa'/></Link></li>
+                <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
+                <li><Link to="/populares" className='nav-link'>Populares</Link></li>
+                <li><Link to="/usados" className='nav-link'>Usados</Link></li>
+                <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
                 <a id='carrinho' href='#'>Carrinho</a>
-                <a></a>
             </ul>
         </div>
         <div className='MedioColor'>

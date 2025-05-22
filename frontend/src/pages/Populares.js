@@ -11,13 +11,12 @@ function Populares(){
         <div className='TopColor'>
             <ul className="nav-menu">
                 <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo'/></Link></li>
-                <li><input type='carros' placeholder='Pesquisa'/></li>
+                <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa'/></Link></li>
                 <li><Link to="/esportivos">Esportivos</Link></li>
                 <li><Link to="/populares">Populares</Link></li>
                 <li><Link to="/usados">Usados</Link></li>
                 <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
                 <a id='carrinho' href='#'>Carrinho</a>
-                <a></a>
             </ul>
         </div>
         <PopularesItens />
