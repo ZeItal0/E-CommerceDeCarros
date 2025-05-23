@@ -6,16 +6,20 @@ import UsadosItens from '../components/UsadosItens';
 function Usados() {
     const navigate = useNavigate();
 
+    const irParaPesquisa = () => {
+        navigate('/pesquisa?&status=usado');
+    };
+
     return (
         <div className='Home_container'>
             <div className='TopColor'>
                 <ul className="nav-menu">
                     <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-                    <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa' /></Link></li>
-                    <li><Link to="/esportivos">Esportivos</Link></li>
-                    <li><Link to="/populares">Populares</Link></li>
-                    <li><Link to="/usados">Usados</Link></li>
-                    <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
+                    <li><input type='text' placeholder='Pesquisa' onClick={irParaPesquisa} /></li>
+                    <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
+                    <li><Link to="/populares" className='nav-link'>Populares</Link></li>
+                    <li><Link to="/usados" className='nav-link'>Usados</Link></li>
+                    <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
                     <a id='carrinho' href='#'>Carrinho</a>
                 </ul>
             </div>

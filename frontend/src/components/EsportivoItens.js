@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import car from '../pages/cars/carros-esportivos.png'
+import '../pages/home.css';
 
 function EsportivoItens() {
   const [itens, setItens] = useState([]);
@@ -25,14 +26,14 @@ function EsportivoItens() {
 
   return (
     <div className="itens">
-      {itens.length > 0 ? ( 
+      {itens.length > 0 ? (
         <ul>
           {itens.filter((item) => item.categoria === 'Esportivo' && item.status === 'novo').map((item) => ( //Esperando incrementação do "esportivo" ao banco de dados
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
-                <a><strong>Marca:</strong> {item.marca} {item.modelo}</a>
-                <a><strong id='valorcolor'>Valor:</strong> {item.valor}</a>
+                <a id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</a>
+                <a><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</a>
               </Link>
             </li>
           ))}

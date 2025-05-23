@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import '../pages/home.css';
 
 function ListaDeItens() {
   const [itens, setItens] = useState([]);
@@ -24,14 +25,14 @@ function ListaDeItens() {
 
   return (
     <div className="itens">
-      {itens.length > 0 ? ( 
+      {itens.length > 0 ? (
         <ul>
           {itens.map((item) => (
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
-                <a><strong>Marca:</strong> {item.marca} {item.modelo}</a>
-                <a><strong id='valorcolor'>Valor:</strong> {item.valor}</a>
+                <a id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</a>
+                <a><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</a>
               </Link>
             </li>
           ))}

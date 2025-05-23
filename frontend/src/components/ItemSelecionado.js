@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from '../pages/logo/logo.png';
 import ListaDeItens from "../components/ListaDeItens";
+import '../pages/home.css';
 
 function ItemSelecionado() {
   const { id } = useParams();
@@ -24,15 +25,7 @@ function ItemSelecionado() {
     };
 
     fetchItens();
-  }, []);
-
-  if (loading) {
-    return <p>Carregando itens...</p>;
-  }
-
-  if (error) {
-    return <p>Erro ao carregar os itens: {error.message}</p>;
-  }
+  }, [id]);
 
   return item ? (
     <div className='Home_container'>
@@ -40,10 +33,10 @@ function ItemSelecionado() {
         <ul className="nav-menu">
           <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
           <li><input type='carros' placeholder='Pesquisa' /></li>
-          <li><Link to="/esportivos">Esportivos</Link></li>
-          <li><Link to="/populares">Populares</Link></li>
-          <li><Link to="/usados">Usados</Link></li>
-          <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
+          <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
+          <li><Link to="/populares" className='nav-link'>Populares</Link></li>
+          <li><Link to="/usados" className='nav-link'>Usados</Link></li>
+          <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
           <a id='carrinho' href='#'>Carrinho</a>
           <a></a>
         </ul>
