@@ -15,7 +15,6 @@ function Cadastroproduto() {
                     <li><Link to="/populares">Populares</Link></li>
                     <li><Link to="/usados">Usados</Link></li>
                     <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
-                    <a id='carrinho' href='#'>Carrinho</a>
                     <a></a>
                 </ul>
             </div>

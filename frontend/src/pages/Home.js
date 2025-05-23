@@ -42,7 +42,7 @@ function Home(){
                 <li><Link to="/populares" className='nav-link'>Populares</Link></li>
                 <li><Link to="/usados" className='nav-link'>Usados</Link></li>
                 <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
-                <a id='carrinho' href='#'>Carrinho</a>
+                
             </ul>
         </div>
         <div className='MedioColor'>
