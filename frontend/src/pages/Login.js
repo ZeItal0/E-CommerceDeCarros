@@ -1,5 +1,5 @@
 import './style.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logoLogin.png';
 
 function Login() {
@@ -23,8 +23,8 @@ function Login() {
                 <input type='email' placeholder='Email' className='login-input' />
                 <input type='password' placeholder='Password' className='login-input' />
                 <button onClick={handleLogin} className="login-button">LOGIN</button>
-                <div className="criar-Conta">
-                    <span>Crie sua conta.</span>
+                <div>
+                    <Link to="/CadastroUsuario" className="criar-Conta">Crie sua conta.</Link>
                 </div>
             </div>
         </div>

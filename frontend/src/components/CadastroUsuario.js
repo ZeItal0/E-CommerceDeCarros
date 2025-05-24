@@ -1,6 +1,6 @@
-import "./home.css";
+import '../pages/home.css';
 import { Link, useNavigate } from "react-router-dom";
-import logo from "./logo/logo.png";
+import logo from "../pages/logo/logo.png";
 
 function CadastroUsuario() {
   const navigate = useNavigate();
@@ -10,63 +10,22 @@ function CadastroUsuario() {
   };
 
   return (
-    <div className="Home_container">
-      <div className="TopColor">
-        <ul className="nav-menu">
-          <li>
-            <Link to="/home">
-              <img src={logo} alt="Nossa logo" className="ImagemLogo" />
-            </Link>
-          </li>
-          <li>
-            <input
-              type="text"
-              placeholder="Pesquisa"
-              onClick={irParaPesquisa}
-            />
-          </li>
-          <li>
-            <Link to="/esportivos" className="nav-link">
-              Esportivos
-            </Link>
-          </li>
-          <li>
-            <Link to="/populares" className="nav-link">
-              Populares
-            </Link>
-          </li>
-          <li>
-            <Link to="/usados" className="nav-link">
-              Usados
-            </Link>
-          </li>
-          <li>
-            <Link to="/cadastroproduto" className="nav-link">
-              Cadastro veiculo
-            </Link>
-          </li>
-        </ul>
+    <div className='login-wrapper'>
+      <div className='login-left'>
+        <div className="left-content">
+          <h2>BEM VINDO</h2>
+          <p>Sinta a velocidade</p>
+        </div>
       </div>
-      <div>
-        <label>
-          Nome
-          <input type="text" name="nome" value="nome" />
-        </label>
 
-        <label>
-          endereco
-          <input type="text" name="endereco" value="endereco" />
-        </label>
-
-        <label>
-          Email
-          <input type="text" name="email" value="email" />
-        </label>
-       <label>
-        Senha
-        <input type="password" name="senha" value="senha"/> 
-       </label>
-        <button>Cadastrar</button>
+      <div className='login-right'>
+        <img src={logo} alt='Logo' className='login-logo' />
+        <h1 className="login-title">Cadastro</h1>
+        <input type="text" name="nome" className='login-input' placeholder='Nome' />
+        <input type="text" name="endereco" className='login-input' placeholder='Endereço' />
+        <input type="text" name="email" className='login-input' placeholder='Email' />
+        <input type="password" name="senha" className='login-input' placeholder='Senha' />
+        <button className="button-cadastro">Cadastrar</button>
       </div>
     </div>
   );

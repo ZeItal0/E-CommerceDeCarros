@@ -10,6 +10,7 @@ function ItemSelecionado() {
   const [item, setItens] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchItens = async () => {
@@ -26,18 +27,21 @@ function ItemSelecionado() {
 
     fetchItens();
   }, [id]);
+  const handleComprar = () => {
+    navigate('/vendas', { state: { item } });
+  };
 
   return item ? (
     <div className='Home_container'>
       <div className='TopColor'>
         <ul className="nav-menu">
           <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-          <li><input type='carros' placeholder='Pesquisa' /></li>
+          <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa' className="Pesquisa"/></Link></li>
           <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
           <li><Link to="/populares" className='nav-link'>Populares</Link></li>
           <li><Link to="/usados" className='nav-link'>Usados</Link></li>
           <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
-          
+
           <a></a>
         </ul>
       </div>
@@ -52,8 +56,7 @@ function ItemSelecionado() {
                 <span className='cor' style={{ backgroundColor: item.cor }}>
                 </span>
               </p>
-              <button>Carrinho</button><br />
-              <button>Comprar</button>
+              <button onClick={handleComprar} className="button-compra">Comprar</button>
             </div>
           </div>
           <div className='info-down'>

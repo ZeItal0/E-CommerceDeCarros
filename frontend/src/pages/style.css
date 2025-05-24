@@ -49,7 +49,7 @@
 }
 
 .login-input {
-    width: 100%;
+    width: 70%;
     padding: 12px;
     margin: 10px 0;
     border: none;
@@ -73,14 +73,32 @@
     margin-bottom: 20px;
 }
 .login-button:hover {
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
     background-color: #15696F;
 }
 .criar-Conta {
     text-align: center;
     font-size: 0.9rem;
+    text-decoration: none;
 }
 .login-right {
     justify-content: center;
+}
+.button-cadastro {
+    background-color: #63BDB5;
+    color: white;
+    padding: 15px 90px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.button-cadastro:hover {
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #15696F;
 }
 
 

@@ -1,13 +1,17 @@
-import "./home.css";
+import "../pages/home.css";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "./logo/logo.png";
+import logo from "../pages/logo/logo.png";
+import { useLocation } from "react-router-dom";
 
-function Vendasd() {
+function Vendas() {
   const navigate = useNavigate();
 
   const irParaPesquisa = () => {
     navigate("/pesquisa?categoria");
   };
+
+  const location = useLocation();
+  const { item } = location.state || {};
 
   return (
     <div className="Home_container">
@@ -23,6 +27,7 @@ function Vendasd() {
               type="text"
               placeholder="Pesquisa"
               onClick={irParaPesquisa}
+              className="Pesquisa"
             />
           </li>
           <li>
@@ -47,33 +52,42 @@ function Vendasd() {
           </li>
         </ul>
       </div>
-      <div>
-        <label>
-          Nome
-          <input type="text" name="nome" value="nome" />
-        </label>
+      <div className="container">
+        <div className="container-compra">
+          <h2>Confirme os dados da compra</h2>
+          <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='selecionadoVenda' />
+          <a>{item.marca} {item.modelo} ({item.status})</a>
+          <a>R$ {item.valor}</a>
+          <a>{item.cor}<span className='cor' style={{ backgroundColor: item.cor }}></span></a>
+        </div>
+        <div className="container-vendas">
+          <h2>Dados pessoais</h2>
+          <label>
+            <input type="text" placeholder="Nome" />
+          </label>
 
-        <label>
-          endereco
-          <input type="text" name="endereco" value="endereco" />
-        </label>
+          <label>
+            <input type="text" placeholder="Endereço" />
+          </label>
 
-        <label>
-          Email
-          <input type="text" name="email" value="email" />
-        </label>
-        <label>
-          forma de pagamento
-          <select name="pagamento">
-            <option value="pix">Pix</option>
-            <option value="credito">Credito</option>
-            <option value="debito">Debito</option>
-            <option value="boleto">Boleto</option>
-            <option value="cheque">Cheque</option>
-            <option value="dinheiro">Dinheiro</option>
-          </select>
-        </label>
-        <button>finalizar</button>
+          <label>
+            <input type="text" placeholder="Email" />
+          </label>
+          <div className="finalizar-input">
+            <label>
+            forma de pagamento
+            <select name="pagamento">
+              <option value="pix">Pix</option>
+              <option value="credito">Credito</option>
+              <option value="debito">Debito</option>
+              <option value="boleto">Boleto</option>
+              <option value="cheque">Cheque</option>
+              <option value="dinheiro">Dinheiro</option>
+            </select>
+          </label>
+          </div>
+          <button className="button-compra">Finalizar</button>
+        </div>
       </div>
     </div>
   );

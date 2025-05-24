@@ -10,15 +10,16 @@ function Cadastroproduto() {
             <div className='TopColor'>
                 <ul className="nav-menu">
                     <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-                    <li><input type='carros' placeholder='Pesquisa' /></li>
-                    <li><Link to="/esportivos">Esportivos</Link></li>
-                    <li><Link to="/populares">Populares</Link></li>
-                    <li><Link to="/usados">Usados</Link></li>
-                    <li><Link to="/cadastroproduto">Cadastro veiculo</Link></li>
+                    <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa' className="Pesquisa"/></Link></li>
+                    <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
+                    <li><Link to="/populares" className='nav-link'>Populares</Link></li>
+                    <li><Link to="/usados" className='nav-link'>Usados</Link></li>
+                    <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
                     <a></a>
                 </ul>
             </div>
             <div className="container-inputs">
+                <h2>Cadastrar produto</h2>
                 <input type='Text' placeholder='marca' />
                 <input type='Text' placeholder='modelo' />
                 <input type='Text' placeholder='cor' />
@@ -33,7 +34,7 @@ function Cadastroproduto() {
                 </label>
                 <label>
                     Usado
-                     <input type='radio' name='situacao' value="usado" />
+                    <input type='radio' name='situacao' value="usado" />
                 </label>
             </div>
             <div className='estilo-radios'>
@@ -48,7 +49,7 @@ function Cadastroproduto() {
             </div>
             <div className='descricao'>
                 <textarea name='Descricao' rows="9" cols="26" placeholder='Descricao'></textarea>
-                <button>Salvar</button>
+                <button className="button-compra">Salvar</button>
             </div>
             <div className='rodape'>
                 <label for="imagem">Anexar Imagem:</label>
