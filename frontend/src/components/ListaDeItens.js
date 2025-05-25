@@ -31,8 +31,8 @@ function ListaDeItens() {
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
-                <a id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</a>
-                <a><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</a>
+                <p id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</p>
+                <p><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</p>
               </Link>
             </li>
           ))}

@@ -7,11 +7,13 @@ require('dotenv').config();
 
 const app = express();
 const itensRoutes = require('./routes/itensRoutes');
+const UserRoutes = require('./routes/UserRoutes')
 
 app.use(cors());
 app.use(express.json());
 app.use('/api/itens', itensRoutes);
 app.use('/ImagensVeiculos', express.static(path.join(__dirname, 'banco/ImagensVeiculos')));
+app.use('/api', UserRoutes);
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,

@@ -4,7 +4,7 @@ import logo from './logo/logo.png'
 
 function Cadastroproduto() {
     const navigate = useNavigate();
-
+    const tipoUsuario = localStorage.getItem('tipoUsuario');
     return (
         <div className='Home_container'>
             <div className='TopColor'>
@@ -14,7 +14,11 @@ function Cadastroproduto() {
                     <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
                     <li><Link to="/populares" className='nav-link'>Populares</Link></li>
                     <li><Link to="/usados" className='nav-link'>Usados</Link></li>
-                    <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
+                    <li>
+                        {tipoUsuario === 'Gerente' && (
+                            <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
+                        )}
+                    </li>
                     <a></a>
                 </ul>
             </div>

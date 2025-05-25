@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 function Vendas() {
   const navigate = useNavigate();
-
+  const tipoUsuario = localStorage.getItem('tipoUsuario');
   const irParaPesquisa = () => {
     navigate("/pesquisa?categoria");
   };
@@ -22,23 +22,10 @@ function Vendas() {
               <img src={logo} alt="Nossa logo" className="ImagemLogo" />
             </Link>
           </li>
+          <li><input type="text" placeholder="Pesquisa" onClick={irParaPesquisa} className="Pesquisa" /></li>
+          <li><Link to="/esportivos" className="nav-link">Esportivos</Link></li>
           <li>
-            <input
-              type="text"
-              placeholder="Pesquisa"
-              onClick={irParaPesquisa}
-              className="Pesquisa"
-            />
-          </li>
-          <li>
-            <Link to="/esportivos" className="nav-link">
-              Esportivos
-            </Link>
-          </li>
-          <li>
-            <Link to="/populares" className="nav-link">
-              Populares
-            </Link>
+            <Link to="/populares" className="nav-link">Populares</Link>
           </li>
           <li>
             <Link to="/usados" className="nav-link">
@@ -46,9 +33,9 @@ function Vendas() {
             </Link>
           </li>
           <li>
-            <Link to="/cadastroproduto" className="nav-link">
-              Cadastro veiculo
-            </Link>
+            {tipoUsuario === 'Gerente' && (
+              <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
+            )}
           </li>
         </ul>
       </div>
@@ -75,16 +62,16 @@ function Vendas() {
           </label>
           <div className="finalizar-input">
             <label>
-            forma de pagamento
-            <select name="pagamento">
-              <option value="pix">Pix</option>
-              <option value="credito">Credito</option>
-              <option value="debito">Debito</option>
-              <option value="boleto">Boleto</option>
-              <option value="cheque">Cheque</option>
-              <option value="dinheiro">Dinheiro</option>
-            </select>
-          </label>
+              forma de pagamento
+              <select name="pagamento">
+                <option value="pix">Pix</option>
+                <option value="credito">Credito</option>
+                <option value="debito">Debito</option>
+                <option value="boleto">Boleto</option>
+                <option value="cheque">Cheque</option>
+                <option value="dinheiro">Dinheiro</option>
+              </select>
+            </label>
           </div>
           <button className="button-compra">Finalizar</button>
         </div>
