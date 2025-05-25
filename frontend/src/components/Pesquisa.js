@@ -9,7 +9,7 @@ function Pesquisa() {
 
   const categoriaInicial = queryParams.get('categoria');
   const statusInicial = queryParams.get('status');
-
+  const tipoUsuario = localStorage.getItem('tipoUsuario');
   const [busca, setBusca] = useState('');
   const [itens, setItens] = useState([]);
   const [resultados, setResultados] = useState([]);
@@ -48,12 +48,16 @@ function Pesquisa() {
       <div className='TopColor'>
         <ul className="nav-menu">
           <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-          <li><input type='text' placeholder='Pesquisa' value={busca} onChange={(e) => setBusca(e.target.value)} className="Pesquisa"/></li>
+          <li><input type='text' placeholder='Pesquisa' value={busca} onChange={(e) => setBusca(e.target.value)} className="Pesquisa" /></li>
           <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
           <li><Link to="/populares" className='nav-link'>Populares</Link></li>
           <li><Link to="/usados" className='nav-link'>Usados</Link></li>
-          <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
-          
+          <li>
+            {tipoUsuario === 'Gerente' && (
+              <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
+            )}
+          </li>
+
         </ul>
       </div>
 
