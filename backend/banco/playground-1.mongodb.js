@@ -241,3 +241,21 @@ use("EcommerceVeiculos");
 //     },
 //   }
 // );
+// db.Automoveis.insertOne({
+//   marca: "Byd",
+//   modelo: "Song Plus",
+//   cor: "Blue",
+//   valor: 230000,
+//   descricao: "Eletrico, 4 portas, Automatico",
+//   status: "Novo",
+//   ano: 2024,
+//   quilometragem: 0,
+//   categoria: "Esportivo",
+//   imagem: "/ImagensVeiculos/BydSong-Azul.png",
+//   detalhesTecicos: {
+//     motorizacao: "230hp",
+//     peso: 2300,
+//     combustivel: "Eletrico",
+//     velociadeMaxima: "240 km/h",
+//   },
+// });
