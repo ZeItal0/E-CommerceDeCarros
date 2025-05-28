@@ -58,6 +58,7 @@ function Home() {
                         <div key={item._id} className="carousel-item">
                             <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroY' />
                         </div>
+                        
                     ))}
                 </Slider>
             </div>

@@ -7,10 +7,12 @@ function Cadastroproduto() {
     const tipoUsuario = localStorage.getItem('tipoUsuario');
     return (
         <div className='Home_container'>
+            <div className="tire-track-loop"></div>
+            <div className="tire-track-loop2"></div>
             <div className='TopColor'>
                 <ul className="nav-menu">
                     <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-                    <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa' className="Pesquisa"/></Link></li>
+                    <li><Link to="/pesquisa"><input type='carros' placeholder='Pesquisa' className="Pesquisa" /></Link></li>
                     <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
                     <li><Link to="/populares" className='nav-link'>Populares</Link></li>
                     <li><Link to="/usados" className='nav-link'>Usados</Link></li>

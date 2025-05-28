@@ -33,6 +33,8 @@ function ItemSelecionado() {
 
   return item ? (
     <div className='Home_container'>
+      <div className="tire-track-loop"></div>
+      <div className="tire-track-loop2"></div>
       <div className='TopColor'>
         <ul className="nav-menu">
           <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
