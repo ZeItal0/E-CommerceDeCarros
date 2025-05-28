@@ -5,7 +5,7 @@
 use("EcommerceVeiculos");
 
 // busca no banco sem filtros
-db.Usuario.find();
+db.Automoveis.find();
 
 // busca no banco com filtro
 //db.Automoveis.find({marca: "Toyota"});
@@ -322,5 +322,43 @@ db.Usuario.find();
 //     bairro: "Caipora",
 //     numero: 75,
 //     cep: "56503-145",
+//   },
+// });
+
+// db.Automoveis.insertOne({
+//   marca: "Volvo",
+//   modelo: "Volvo FH",
+//   cor: "silver",
+//   valor: 450000,
+//   descricao: "E um Caminhão!",
+//   status: "Novo",
+//   ano: 2024,
+//   quilometragem: 0,
+//   categoria: "popular",
+//   imagem: "/ImagensVeiculos/VolvoFH-Cinza.png",
+//   detalhesTecicos: {
+//     motorizacao: "G13 500hp",
+//     peso: 9080,
+//     combustivel: "Diesel",
+//     velociadeMaxima: "160 km/h",
+//   },
+// });
+
+// db.Automoveis.insertOne({
+//   marca: "Scania",
+//   modelo: "Scania R Line",
+//   cor: "grenw",
+//   valor: 430000,
+//   descricao: "E um Caminhão!",
+//   status: "Novo",
+//   ano: 2024,
+//   quilometragem: 0,
+//   categoria: "popular",
+//   imagem: "/ImagensVeiculos/ScaniaRLine-verde.png",
+//   detalhesTecicos: {
+//     motorizacao: "16L 700hp",
+//     peso: 9850,
+//     combustivel: "Diesel",
+//     velociadeMaxima: "180 km/h",
 //   },
 // });

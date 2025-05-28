@@ -196,7 +196,7 @@
     "modelo": "Song Plus",
     "cor": "Blue",
     "valor": 230000,
-    "descricao": "O BYD Song Plus azul é um SUV híbrido plug-in com motor 1.5 a gasolina e elétrico, oferecendo 235 cv e autonomia elétrica de até 105 km. Seu interior conta com acabamento premium, multimídia rotativa de 15,6",
+    "descricao": "Eletrico, 4 portas, Automatico",
     "status": "novo",
     "ano": 2024,
     "quilometragem": 0,
@@ -228,6 +228,90 @@
       "peso": 1435,
       "combustivel": "Gasolina",
       "velociadeMaxima": "215 km/h"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379c3f2950bff73cfb211d"
+    },
+    "marca": "Volvo",
+    "modelo": "Volvo FH",
+    "cor": "silver",
+    "valor": 450000,
+    "descricao": "E um Caminhão!",
+    "status": "Novo",
+    "ano": 2024,
+    "quilometragem": 0,
+    "categoria": "popular",
+    "imagem": "/ImagensVeiculos/VolvoFH-Cinza.png",
+    "detalhesTecicos": {
+      "motorizacao": "G13 500hp",
+      "peso": 9080,
+      "combustivel": "Diesel",
+      "velociadeMaxima": "160 km/h"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379c3f2950bff73cfb211e"
+    },
+    "marca": "Scania",
+    "modelo": "Scania R Line",
+    "cor": "grenw",
+    "valor": 430000,
+    "descricao": "E um Caminhão!",
+    "status": "Novo",
+    "ano": 2024,
+    "quilometragem": 0,
+    "categoria": "popular",
+    "imagem": "/ImagensVeiculos/ScaniaRLine-verde.png",
+    "detalhesTecicos": {
+      "motorizacao": "16L 700hp",
+      "peso": 9850,
+      "combustivel": "Diesel",
+      "velociadeMaxima": "180 km/h"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379c4854e86cf814384182"
+    },
+    "marca": "Scania",
+    "modelo": "Scania R Line",
+    "cor": "grenw",
+    "valor": 430000,
+    "descricao": "E um Caminhão!",
+    "status": "Novo",
+    "ano": 2024,
+    "quilometragem": 0,
+    "categoria": "popular",
+    "imagem": "/ImagensVeiculos/ScaniaRLine-verde.png",
+    "detalhesTecicos": {
+      "motorizacao": "16L 700hp",
+      "peso": 9850,
+      "combustivel": "Diesel",
+      "velociadeMaxima": "180 km/h"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379c4cc144e2545b91954e"
+    },
+    "marca": "Scania",
+    "modelo": "Scania R Line",
+    "cor": "grenw",
+    "valor": 430000,
+    "descricao": "E um Caminhão!",
+    "status": "Novo",
+    "ano": 2024,
+    "quilometragem": 0,
+    "categoria": "popular",
+    "imagem": "/ImagensVeiculos/ScaniaRLine-verde.png",
+    "detalhesTecicos": {
+      "motorizacao": "16L 700hp",
+      "peso": 9850,
+      "combustivel": "Diesel",
+      "velociadeMaxima": "180 km/h"
     }
   }
 ]
