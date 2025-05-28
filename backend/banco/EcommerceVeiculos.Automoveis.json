@@ -1,212 +1,231 @@
-[
-  {
-    "_id": {
-      "$oid": "6820d9ed230d4148a5b50f7d"
-    },
-    "marca": "Toyota",
-    "modelo": "Hilux",
-    "cor": "Silver",
-    "valor": 120000,
-    "descricao": "A Hilux 2012 é uma picape robusta equipada com câmbio manual de 6 marchas e motor 2.0 diesel É ideal para quem busca força, durabilidade e desempenho off-road. Completa em equipamentos oferece excelente estabilidade e capacidade de carga, sendo perfeita tanto para o trabalho quanto para o lazer.",
-    "status": "Usado",
-    "ano": 2012,
-    "quilometragem": 98500,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/Hilux-Prata.png",
-    "detalhesTecicos": {
-      "motorizacao": "2.0 230hp",
-      "peso": 1700,
-      "combustivel": "Diesel S10",
-      "velociadeMaxima": "230 km/h"
-    }
+[{
+  "_id": {
+    "$oid": "6820d9ed230d4148a5b50f7d"
   },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a2"
-    },
-    "marca": "Chevrolet",
-    "modelo": "Onix LT",
-    "cor": "White",
-    "valor": 78000,
-    "descricao": "O Onix LT 2023 vem com motor 1.0 turbo que alia economia de combustível com desempenho eficiente no dia a dia. É um carro compacto completo, com design moderno e tecnologia embarcada como central multimídia e conectividade. Zero quilômetro, perfeito para quem busca um carro novo com ótimo custo-benefício.",
-    "status": "novo",
-    "ano": 2023,
-    "quilometragem": 0,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/OnixLT-Branco.png",
-    "detalhesTecicos": {
-      "motorizacao": "1.0 79hp",
-      "peso": 900,
-      "combustivel": "Gasolina, Alcool",
-      "velociadeMaxima": "180 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a3"
-    },
-    "marca": "Volkswagen",
-    "modelo": "Gol G6",
-    "cor": "Red",
-    "valor": 39000,
-    "descricao": "O Gol G6 1.6 Flex é conhecido pela confiabilidade mecânica e baixo custo de manutenção. Com e ótimo estado de conservação, é uma excelente escolha para uso urbano e viagens.  Oferece conforto interno, direção hidráulica e ar-condicionado, sendo um dos populares mais queridos do Brasil.",
-    "status": "usado",
-    "ano": 2016,
-    "quilometragem": 72000,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/GolG6-Vermelho.png",
-    "detalhesTecicos": {
-      "motorizacao": "1.5 110hp",
-      "peso": 1000,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "200 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "682108913d9396f8773350a4"
-    },
-    "marca": "Fiat",
-    "modelo": "Strada Freedom",
-    "cor": "Gray",
-    "valor": 105000,
-    "descricao": "A nova Strada Freedom cabine dupla 2024 combina versatilidade com estilo. Seu motor 1.8 oferece força para o trabalho e conforto para a família. Vem com espaço interno generoso, capacidade de carga ampliada e conectividade moderna, sendo a líder no segmento das picapes leves.",
-    "status": "novo",
-    "ano": 2024,
-    "quilometragem": 0,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/FiatStrada-Cinza.png",
-    "detalhesTecicos": {
-      "motorizacao": "1.8 179hp",
-      "peso": 1150,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "200 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6824fb3c5dd8b6192d947e17"
-    },
-    "marca": "Jeep",
-    "modelo": "Compass",
-    "cor": "Black",
-    "valor": 160000,
-    "descricao": "O Compass 2020 traz motorização 2.0 diesel e tração 4x4, ideal para quem busca segurança e desempenho em todos os tipos de terreno. oferece ótimo consumo e acabamento interno refinado. Um SUV premium com excelente dirigibilidade e robustez, perfeito para longas viagens ou uso urbano.",
-    "status": "usado",
-    "ano": 2020,
-    "quilometragem": 35000,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/JeepCompass-Preto.png",
-    "detalhesTecicos": {
-      "motorizacao": "2.0 160hp",
-      "peso": 1300,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "220 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6824fa4d5dd8b6192d947e15"
-    },
-    "marca": "Toyota",
-    "modelo": "Corolla",
-    "cor": "Black",
-    "valor": 150000,
-    "descricao": "O Corolla XEI 2024 é referência em conforto, tecnologia e segurança no segmento de sedãs médios. Equipado com motor 2.0 Flex entrega desempenho excelente e baixo consumo.  É completo em itens de série e traz um visual elegante e sofisticado, ideal para quem busca um carro com status e confiabilidade.",
-    "status": "novo",
-    "ano": 2024,
-    "quilometragem": 0,
-    "categoria": "Esportivo",
-    "imagem": "/ImagensVeiculos/Corolla-Preto.png",
-    "detalhesTecicos": {
-      "motorizacao": "2.0 230hp",
-      "peso": 1350,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "260 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6824fc755dd8b6192d947e19"
-    },
-    "marca": "Fiat",
-    "modelo": "Uno",
-    "cor": "Gray",
-    "valor": 40000,
-    "descricao": "Compacto, econômico e confiável, o Fiat Uno 2016 é uma ótima opção para quem quer um carro ágil e com manutenção acessível. Com motor 1.0 Flex de tem bom desempenho para o uso urbano. Seu estado de conservação é ótimo e está completo com ar-condicionado, direção hidráulica e vidros elétricos.",
-    "status": "usado",
-    "ano": 2016,
-    "quilometragem": 70000,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/FiatUno-Cinza.png",
-    "detalhesTecicos": {
-      "motorizacao": "1.0 89hp",
-      "peso": 800,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "180 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6824fd0c5dd8b6192d947e1b"
-    },
-    "marca": "Fiat",
-    "modelo": "Palio Attractive",
-    "cor": "Red",
-    "valor": 38131,
-    "descricao": "O Palio Attractive 1.4 é um modelo completo, com bom desempenho graças ao motor 1.6 Apesar de ser 2014, está em excelente estado, ideal para quem busca economia sem abrir mão de conforto.Seu espaço interno é adequado para a família e vem equipado com todos os itens básicos de conforto.",
-    "status": "usado",
-    "ano": 2014,
-    "quilometragem": 89000,
-    "categoria": "Popular",
-    "imagem": "/ImagensVeiculos/PalioAttractive-Vermelho.png",
-    "detalhesTecicos": {
-      "motorizacao": "1.6 115hp",
-      "peso": 1500,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "190 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6824fde65dd8b6192d947e1c"
-    },
-    "marca": "Bmw",
-    "modelo": "320i",
-    "cor": "Blue",
-    "valor": 217800,
-    "descricao": "A BMW 320i M Sport 2020 é um sedã esportivo com motor 3.2 turbo que entrega uma experiência de condução premium. Com câmbio automático e design agressivo, une luxo, tecnologia e desempenho. Seu interior sofisticado e acabamento impecável o tornam um dos modelos mais desejados da categoria.",
-    "status": "usado",
-    "ano": 2020,
-    "quilometragem": 58000,
-    "categoria": "Esportivo",
-    "imagem": "/ImagensVeiculos/Bmw320I-Azul.png",
-    "detalhesTecicos": {
-      "motorizacao": "3.2 360hp",
-      "peso": 1200,
-      "combustivel": "Gasolina",
-      "velociadeMaxima": "320 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "683641a9c2af389408aee0eb"
-    },
-    "marca": "Byd",
-    "modelo": "Song Plus",
-    "cor": "Blue",
-    "valor": 230000,
-    "descricao": "Eletrico, 4 portas, Automatico",
-    "status": "Novo",
-    "ano": 2024,
-    "quilometragem": 0,
-    "categoria": "Esportivo",
-    "imagem": "/ImagensVeiculos/BydSong-Azul.png",
-    "detalhesTecicos": {
-      "motorizacao": "230hp",
-      "peso": 2300,
-      "combustivel": "Eletrico",
-      "velociadeMaxima": "240 km/h"
-    }
+  "marca": "Toyota",
+  "modelo": "Hilux",
+  "cor": "Silver",
+  "valor": 120000,
+  "descricao": "A Hilux 2012 é uma picape robusta equipada com câmbio manual de 6 marchas e motor 2.0 diesel É ideal para quem busca força, durabilidade e desempenho off-road. Completa em equipamentos oferece excelente estabilidade e capacidade de carga, sendo perfeita tanto para o trabalho quanto para o lazer.",
+  "status": "Usado",
+  "ano": 2012,
+  "quilometragem": 98500,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/Hilux-Prata.png",
+  "detalhesTecicos": {
+    "motorizacao": "2.0 230hp",
+    "peso": 1700,
+    "combustivel": "Diesel S10",
+    "velociadeMaxima": "230 km/h"
   }
-]
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a2"
+  },
+  "marca": "Chevrolet",
+  "modelo": "Onix LT",
+  "cor": "White",
+  "valor": 78000,
+  "descricao": "O Onix LT 2023 vem com motor 1.0 turbo que alia economia de combustível com desempenho eficiente no dia a dia. É um carro compacto completo, com design moderno e tecnologia embarcada como central multimídia e conectividade. Zero quilômetro, perfeito para quem busca um carro novo com ótimo custo-benefício.",
+  "status": "novo",
+  "ano": 2023,
+  "quilometragem": 0,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/OnixLT-Branco.png",
+  "detalhesTecicos": {
+    "motorizacao": "1.0 79hp",
+    "peso": 900,
+    "combustivel": "Gasolina, Alcool",
+    "velociadeMaxima": "180 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a3"
+  },
+  "marca": "Volkswagen",
+  "modelo": "Gol G6",
+  "cor": "Red",
+  "valor": 39000,
+  "descricao": "O Gol G6 1.6 Flex é conhecido pela confiabilidade mecânica e baixo custo de manutenção. Com e ótimo estado de conservação, é uma excelente escolha para uso urbano e viagens.  Oferece conforto interno, direção hidráulica e ar-condicionado, sendo um dos populares mais queridos do Brasil.",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 72000,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/GolG6-Vermelho.png",
+  "detalhesTecicos": {
+    "motorizacao": "1.5 110hp",
+    "peso": 1000,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "200 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "682108913d9396f8773350a4"
+  },
+  "marca": "Fiat",
+  "modelo": "Strada Freedom",
+  "cor": "Gray",
+  "valor": 105000,
+  "descricao": "A nova Strada Freedom cabine dupla 2024 combina versatilidade com estilo. Seu motor 1.8 oferece força para o trabalho e conforto para a família. Vem com espaço interno generoso, capacidade de carga ampliada e conectividade moderna, sendo a líder no segmento das picapes leves.",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/FiatStrada-Cinza.png",
+  "detalhesTecicos": {
+    "motorizacao": "1.8 179hp",
+    "peso": 1150,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "200 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824fb3c5dd8b6192d947e17"
+  },
+  "marca": "Jeep",
+  "modelo": "Compass",
+  "cor": "Black",
+  "valor": 160000,
+  "descricao": "O Compass 2020 traz motorização 2.0 diesel e tração 4x4, ideal para quem busca segurança e desempenho em todos os tipos de terreno. oferece ótimo consumo e acabamento interno refinado. Um SUV premium com excelente dirigibilidade e robustez, perfeito para longas viagens ou uso urbano.",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 35000,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/JeepCompass-Preto.png",
+  "detalhesTecicos": {
+    "motorizacao": "2.0 160hp",
+    "peso": 1300,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "220 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824fa4d5dd8b6192d947e15"
+  },
+  "marca": "Toyota",
+  "modelo": "Corolla",
+  "cor": "Black",
+  "valor": 150000,
+  "descricao": "O Corolla XEI 2024 é referência em conforto, tecnologia e segurança no segmento de sedãs médios. Equipado com motor 2.0 Flex entrega desempenho excelente e baixo consumo.  É completo em itens de série e traz um visual elegante e sofisticado, ideal para quem busca um carro com status e confiabilidade.",
+  "status": "novo",
+  "ano": 2024,
+  "quilometragem": 0,
+  "categoria": "Esportivo",
+  "imagem": "/ImagensVeiculos/Corolla-Preto.png",
+  "detalhesTecicos": {
+    "motorizacao": "2.0 230hp",
+    "peso": 1350,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "260 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824fc755dd8b6192d947e19"
+  },
+  "marca": "Fiat",
+  "modelo": "Uno",
+  "cor": "Gray",
+  "valor": 40000,
+  "descricao": "Compacto, econômico e confiável, o Fiat Uno 2016 é uma ótima opção para quem quer um carro ágil e com manutenção acessível. Com motor 1.0 Flex de tem bom desempenho para o uso urbano. Seu estado de conservação é ótimo e está completo com ar-condicionado, direção hidráulica e vidros elétricos.",
+  "status": "usado",
+  "ano": 2016,
+  "quilometragem": 70000,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/FiatUno-Cinza.png",
+  "detalhesTecicos": {
+    "motorizacao": "1.0 89hp",
+    "peso": 800,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "180 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824fd0c5dd8b6192d947e1b"
+  },
+  "marca": "Fiat",
+  "modelo": "Palio Attractive",
+  "cor": "Red",
+  "valor": 38131,
+  "descricao": "O Palio Attractive 1.4 é um modelo completo, com bom desempenho graças ao motor 1.6 Apesar de ser 2014, está em excelente estado, ideal para quem busca economia sem abrir mão de conforto.Seu espaço interno é adequado para a família e vem equipado com todos os itens básicos de conforto.",
+  "status": "usado",
+  "ano": 2014,
+  "quilometragem": 89000,
+  "categoria": "Popular",
+  "imagem": "/ImagensVeiculos/PalioAttractive-Vermelho.png",
+  "detalhesTecicos": {
+    "motorizacao": "1.6 115hp",
+    "peso": 1500,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "190 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "6824fde65dd8b6192d947e1c"
+  },
+  "marca": "Bmw",
+  "modelo": "320i",
+  "cor": "Blue",
+  "valor": 217800,
+  "descricao": "A BMW 320i M Sport 2020 é um sedã esportivo com motor 3.2 turbo que entrega uma experiência de condução premium. Com câmbio automático e design agressivo, une luxo, tecnologia e desempenho. Seu interior sofisticado e acabamento impecável o tornam um dos modelos mais desejados da categoria.",
+  "status": "usado",
+  "ano": 2020,
+  "quilometragem": 58000,
+  "categoria": "Esportivo",
+  "imagem": "/ImagensVeiculos/Bmw320I-Azul.png",
+  "detalhesTecicos": {
+    "motorizacao": "3.2 360hp",
+    "peso": 1200,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "320 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "683641a9c2af389408aee0eb"
+  },
+  "marca": "Byd",
+  "modelo": "Song Plus",
+  "cor": "Blue",
+  "valor": 230000,
+  "descricao": "O BYD Song Plus azul é um SUV híbrido plug-in com motor 1.5 a gasolina e elétrico, oferecendo 235 cv e autonomia elétrica de até 105 km. Seu interior conta com acabamento premium, multimídia rotativa de 15,6",
+  "status": "Novo",
+  "ano": 2024,
+  "quilometragem": 0,
+  "categoria": "Esportivo",
+  "imagem": "/ImagensVeiculos/BydSong-Azul.png",
+  "detalhesTecicos": {
+    "motorizacao": "230hp",
+    "peso": 2300,
+    "combustivel": "Eletrico",
+    "velociadeMaxima": "240 km/h"
+  }
+},
+{
+  "_id": {
+    "$oid": "68374c7b67a383b50aaaf23f"
+  },
+  "marca": "Mercedes-Benz",
+  "modelo": "GLA 200",
+  "cor": "White",
+  "valor": 344900,
+  "descricao": "A GLA 200 2024 combina elegância, desempenho e tecnologia em um SUV compacto de luxo.Equipado com motor 1.3 turbo de 163 cv e câmbio automático de 7 marchas, garante uma condução ágil e eficiente. Seu interior moderno traz o sistema MBUX, conectividade total e conforto premium típico da Mercedes-Benz.",
+  "status": "Novo",
+  "ano": 2024,
+  "quilometragem": 0,
+  "categoria": "Esportivo",
+  "imagem": "/ImagensVeiculos/Mercedes-BenzGLA200Branca.png",
+  "detalhesTecicos": {
+    "motorizacao": "230hp",
+    "peso": 1435,
+    "combustivel": "Gasolina",
+    "velociadeMaxima": "215 km/h"
+  }
+}]
