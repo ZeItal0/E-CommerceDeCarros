@@ -5,7 +5,7 @@
 use("EcommerceVeiculos");
 
 // busca no banco sem filtros
-//db.Automoveis.find();
+db.Usuario.find();
 
 // busca no banco com filtro
 //db.Automoveis.find({marca: "Toyota"});
@@ -257,5 +257,70 @@ use("EcommerceVeiculos");
 //     peso: 2300,
 //     combustivel: "Eletrico",
 //     velociadeMaxima: "240 km/h",
+//   },
+// });
+
+// db.Usuario.insertOne({
+//   nome: "Italo Martinez",
+//   email: "Italo@gmail.com",
+//   senha: "12345",
+//   tipoUsuario: "Gerente",
+//   endereco: {
+//     rua: "avenida jose bonifacio",
+//     bairro: "são cristovão",
+//     numero: 9856,
+//     cep: "56503-010",
+//   },
+// });
+
+// db.Usuario.insertOne({
+//   nome: "Richades Matheus",
+//   email: "PrincipeChales@gmail.com",
+//   senha: "12345",
+//   tipoUsuario: "Funcionario",
+//   endereco: {
+//     rua: "rua nova",
+//     bairro: "bairro do assalto",
+//     numero: 171,
+//     cep: "55270-000",
+//   },
+// });
+
+// db.Usuario.insertOne({
+//   nome: "Caiu Fernando",
+//   email: "Ferdinando@gmail.com",
+//   senha: "12345",
+//   tipoUsuario: "Funcionario",
+//   endereco: {
+//     rua: "coabe 2",
+//     bairro: "São cristovão",
+//     numero: 69,
+//     cep: "56503-155",
+//   },
+// });
+
+// db.Usuario.insertOne({
+//   nome: "Jerfesson Melo",
+//   email: "Jerfina@gmail.com",
+//   senha: "12345",
+//   tipoUsuario: "Funcionario",
+//   endereco: {
+//     rua: "Frei damião",
+//     bairro: "novo horizonte",
+//     numero: 59,
+//     cep: "56540-000",
+//   },
+// });
+
+// db.Usuario.insertOne({
+//   nome: "Pedro igor ",
+//   email: "Pedrinho@gmail.com",
+//   senha: "12345",
+//   tipoUsuario: "Funcionario",
+//   endereco: {
+//     rua: "Sucupira",
+//     bairro: "Caipora",
+//     numero: 75,
+//     cep: "56503-145",
 //   },
 // });

@@ -4,14 +4,239 @@
       "$oid": "6820db30230d4148a5b50f80"
     },
     "nome": "Teste1",
-    "email": "teste1@gmail.com",
-    "senha": "teste13235@",
-    "tipoUsuario": "Gerente",
+    "email": "amd123",
+    "senha": "adm123",
     "endereco": {
       "rua": "santos dumont",
       "bairro": "centro",
       "numero": 15,
       "cep": "56540-000"
+    },
+    "tipoUsuario": "Gerente"
+  },
+  {
+    "_id": {
+      "$oid": "68379482a17a799b55aaca87"
+    },
+    "nome": "Italo Martinez",
+    "email": "Italo@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Gerente",
+    "endereco": {
+      "rua": "avenida jose bonifacio",
+      "bairro": "são cristovão",
+      "numero": 9856,
+      "cep": "56503-010"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379482a17a799b55aaca88"
+    },
+    "nome": "Richades Matheus",
+    "email": "PrincipeChales@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "rua nova",
+      "bairro": "bairro do assalto",
+      "numero": 171,
+      "cep": "55270-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379482a17a799b55aaca89"
+    },
+    "nome": "Caiu Fernando",
+    "email": "Ferdinando@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "coabe 2",
+      "bairro": "São cristovão",
+      "numero": 69,
+      "cep": "56503-155"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379482a17a799b55aaca8a"
+    },
+    "nome": "Jerfesson Melo",
+    "email": "Jerfina@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Frei damião",
+      "bairro": "novo horizonte",
+      "numero": 59,
+      "cep": "56540-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379482a17a799b55aaca8b"
+    },
+    "nome": "Pedro igor ",
+    "email": "Pedrinho@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Sucupira",
+      "bairro": "Caipora",
+      "numero": 75,
+      "cep": "56503-145"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379493b713c9f53be3e683"
+    },
+    "nome": "Richades Matheus",
+    "email": "PrincipeChales@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "rua nova",
+      "bairro": "bairro do assalto",
+      "numero": 171,
+      "cep": "55270-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379493b713c9f53be3e684"
+    },
+    "nome": "Caiu Fernando",
+    "email": "Ferdinando@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "coabe 2",
+      "bairro": "São cristovão",
+      "numero": 69,
+      "cep": "56503-155"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379493b713c9f53be3e685"
+    },
+    "nome": "Jerfesson Melo",
+    "email": "Jerfina@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Frei damião",
+      "bairro": "novo horizonte",
+      "numero": 59,
+      "cep": "56540-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68379493b713c9f53be3e686"
+    },
+    "nome": "Pedro igor ",
+    "email": "Pedrinho@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Sucupira",
+      "bairro": "Caipora",
+      "numero": 75,
+      "cep": "56503-145"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6837949d11fcb15d1e424330"
+    },
+    "nome": "Caiu Fernando",
+    "email": "Ferdinando@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "coabe 2",
+      "bairro": "São cristovão",
+      "numero": 69,
+      "cep": "56503-155"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6837949d11fcb15d1e424331"
+    },
+    "nome": "Jerfesson Melo",
+    "email": "Jerfina@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Frei damião",
+      "bairro": "novo horizonte",
+      "numero": 59,
+      "cep": "56540-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6837949d11fcb15d1e424332"
+    },
+    "nome": "Pedro igor ",
+    "email": "Pedrinho@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Sucupira",
+      "bairro": "Caipora",
+      "numero": 75,
+      "cep": "56503-145"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "683794c7cc8c7629f3f2d538"
+    },
+    "nome": "Jerfesson Melo",
+    "email": "Jerfina@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Frei damião",
+      "bairro": "novo horizonte",
+      "numero": 59,
+      "cep": "56540-000"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "683794c7cc8c7629f3f2d539"
+    },
+    "nome": "Pedro igor ",
+    "email": "Pedrinho@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Sucupira",
+      "bairro": "Caipora",
+      "numero": 75,
+      "cep": "56503-145"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "683794cf3e8cba4f4e0cf50e"
+    },
+    "nome": "Pedro igor ",
+    "email": "Pedrinho@gmail.com",
+    "senha": "12345",
+    "tipoUsuario": "Funcionario",
+    "endereco": {
+      "rua": "Sucupira",
+      "bairro": "Caipora",
+      "numero": 75,
+      "cep": "56503-145"
     }
   }
 ]
