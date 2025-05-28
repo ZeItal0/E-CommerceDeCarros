@@ -13,4 +13,4 @@ const UserSchema = new mongoose.Schema({
         cep: String
     }
 });
-module.exports = mongoose.model('User', UserSchema, 'Usuario');
+module.exports = mongoose.model('User', UserSchema, 'Usuarios');
