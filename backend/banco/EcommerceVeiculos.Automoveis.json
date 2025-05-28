@@ -271,47 +271,5 @@
       "combustivel": "Diesel",
       "velociadeMaxima": "180 km/h"
     }
-  },
-  {
-    "_id": {
-      "$oid": "68379c4854e86cf814384182"
-    },
-    "marca": "Scania",
-    "modelo": "Scania R Line",
-    "cor": "grenw",
-    "valor": 430000,
-    "descricao": "E um Caminhão!",
-    "status": "Novo",
-    "ano": 2024,
-    "quilometragem": 0,
-    "categoria": "popular",
-    "imagem": "/ImagensVeiculos/ScaniaRLine-verde.png",
-    "detalhesTecicos": {
-      "motorizacao": "16L 700hp",
-      "peso": 9850,
-      "combustivel": "Diesel",
-      "velociadeMaxima": "180 km/h"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "68379c4cc144e2545b91954e"
-    },
-    "marca": "Scania",
-    "modelo": "Scania R Line",
-    "cor": "grenw",
-    "valor": 430000,
-    "descricao": "E um Caminhão!",
-    "status": "Novo",
-    "ano": 2024,
-    "quilometragem": 0,
-    "categoria": "popular",
-    "imagem": "/ImagensVeiculos/ScaniaRLine-verde.png",
-    "detalhesTecicos": {
-      "motorizacao": "16L 700hp",
-      "peso": 9850,
-      "combustivel": "Diesel",
-      "velociadeMaxima": "180 km/h"
-    }
   }
 ]
