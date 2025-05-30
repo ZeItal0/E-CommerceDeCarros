@@ -62,6 +62,9 @@ function Vendas() {
           <label>
             <input type="text" placeholder="Email" />
           </label>
+          <label>
+            <input type="text" placeholder="Desconto"></input>
+          </label>
           <div className="finalizar-input">
             <label>
               forma de pagamento

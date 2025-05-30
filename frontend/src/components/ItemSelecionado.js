@@ -68,9 +68,8 @@ function ItemSelecionado() {
                 <li>Conbustivel {item.detalhesTecicos?.combustivel}.</li>
                 <li>{item.detalhesTecicos?.motorizacao}.</li>
                 <li>{item.quilometragem} KM.</li>
-                <li>{item.descricao}.</li>
+                {/* <li>{item.descricao}.</li> */}
               </lu>
-              <p></p>
               <button onClick={handleComprar} className="button-compra">Comprar</button>
             </div>
           </div>

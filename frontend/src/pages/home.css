@@ -58,7 +58,7 @@ body {
 }
 
 .MedioColor {
-  background-color: #858585;
+  background-color: #85858588;
   padding: 40px 0;
   display: flex;
   justify-content: center;
@@ -126,6 +126,7 @@ body {
 .selecionado {
   width: 700px;
   height: 600px;
+  border-radius: 5px;
 }
 
 .selecionadoVenda {
@@ -305,7 +306,7 @@ body {
 
 .button-compra {
   margin-top: 1.5rem;
-  padding: 12px 24px;
+  padding: 15px 24px;
   background-color: #5ec3bb;
   color: white;
   font-size: 1.1rem;
@@ -414,12 +415,12 @@ body {
 }
 .tire-track-loop {
   position: fixed;
-  top: 40%;
-  left: -250px;
-  width: 200%;
-  height: 150px;
+  top: 10%;
+  left: 5px;
+  width: 220%;
+  height: 100px;
   background: repeating-linear-gradient(
-    45deg,
+    -45deg,
     #000,
     #000 10px,
     transparent 10px,
@@ -434,10 +435,10 @@ body {
 
 .tire-track-loop2 {
   position: fixed;
-  top: -10%;
-  left: -300px;
+  top: 4%;
+  left: -700px;
   width: 200%;
-  height: 150px;
+  height: 100px;
   background: repeating-linear-gradient(
     45deg,
     #000,
@@ -459,4 +460,8 @@ body {
   100% {
     background-position: 200px 0;
   }
+}
+.carroY:hover {
+  transform: scale(1.06);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }

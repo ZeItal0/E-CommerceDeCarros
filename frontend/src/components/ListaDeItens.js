@@ -29,16 +29,16 @@ function ListaDeItens() {
         <ul>
           {itens.map((item) => (
             <li key={item._id}>
-              <Link to={`/itens/${item._id}`} className='link-item'>
+              <div className='link-item' onClick={() => window.location.href = `/itens/${item._id}`} style={{ cursor: 'pointer' }}>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
                 <p id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</p>
-                <p><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</p>
-              </Link>
+                <p>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</p>
+              </div>
             </li>
           ))}
         </ul>
       ) : (
-        <p>Automovel não encontrado</p>
+        <p>Automóvel não encontrado</p>
       )}
     </div>
   );

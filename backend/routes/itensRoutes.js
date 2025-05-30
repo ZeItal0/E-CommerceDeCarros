@@ -19,7 +19,7 @@ router.get('/:id', async (req, res) =>{
 });
 module.exports = router;
 
-router.post('/cadastro', async (req, res) => {
+router.post('/cadastroProduto', async (req, res) => {
     const novoItem = new Item(req.body);
     await novoItem.save();
     res.status(201).json({message: 'veiculo cadastrado'});
