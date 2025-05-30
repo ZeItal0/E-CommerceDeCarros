@@ -14,3 +14,11 @@ router.post ('/login', async (req , res) => {
     res.status(200).json({message: 'Logado com sucesso', usuarioId: usuario._id, nome: usuario.nome, tipoUsuario:usuario.tipoUsuario});
 });
 module.exports = router;
+
+router.post ('/RegistroUser', async (req , res) => {
+    const {nome, email, password, tipoUsuario, endereco} = req.body;
+
+    const usuarioExistente = await User.findOne({email});
+    if (usuarioExistente)
+});
+module.exports = router;
