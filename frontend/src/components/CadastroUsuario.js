@@ -31,7 +31,7 @@ function CadastroUsuario() {
           nome: formData.nome,
           email: formData.email,
           password: formData.senha,
-          tipoUsuario: 'Cliente',
+          tipoUsuario: 'Gerente',
           endereco: {
             rua: formData.rua,
             bairro: formData.bairro,

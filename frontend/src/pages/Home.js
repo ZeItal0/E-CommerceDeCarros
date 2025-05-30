@@ -5,12 +5,14 @@ import Slider from "react-slick";
 import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logo.png';
+import userimg from './logo/user.png';
 import ListaDeItens from "../components/ListaDeItens";
 
 function Home() {
     const navigate = useNavigate();
     const [carros, setCarros] = useState([]);
     const tipoUsuario = localStorage.getItem('tipoUsuario');
+    const nomeUsuario = localStorage.getItem('nome');
     const handleLogin = () => {
         navigate('/');
     };
@@ -49,16 +51,15 @@ function Home() {
                             <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
                         )}
                     </li>
-
+                    <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
                 </ul>
             </div>
             <div className='MedioColor'>
                 <Slider {...settings}>
                     {carros.map((item) => (
-                        <div key={item._id} className="carousel-item">
-                            <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroY' />
+                        <div className='link-item' onClick={() => window.location.href = `/itens/${item._id}`} style={{ cursor: 'pointer' }}>
+                            <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
                         </div>
-                        
                     ))}
                 </Slider>
             </div>

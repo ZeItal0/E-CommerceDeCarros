@@ -2,10 +2,12 @@ import "../pages/home.css";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../pages/logo/logo.png";
 import { useLocation } from "react-router-dom";
+import userimg from '../pages/logo/user.png';
 
 function Vendas() {
   const navigate = useNavigate();
   const tipoUsuario = localStorage.getItem('tipoUsuario');
+  const nomeUsuario = localStorage.getItem('nome');
   const irParaPesquisa = () => {
     navigate("/pesquisa?categoria");
   };
@@ -39,6 +41,7 @@ function Vendas() {
               <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
             )}
           </li>
+          <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
         </ul>
       </div>
       <div className="container">

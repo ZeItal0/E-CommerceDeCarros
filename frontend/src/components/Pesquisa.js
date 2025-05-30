@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../pages/home.css';
 import logo from '../pages/logo/logo.png';
+import userimg from '../pages/logo/user.png';
 
 function Pesquisa() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function Pesquisa() {
   const [busca, setBusca] = useState('');
   const [itens, setItens] = useState([]);
   const [resultados, setResultados] = useState([]);
+  const nomeUsuario = localStorage.getItem('nome');
 
   useEffect(() => {
     const fetchItens = async () => {
@@ -59,7 +61,7 @@ function Pesquisa() {
               <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
             )}
           </li>
-
+          <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
         </ul>
       </div>
 

@@ -2,10 +2,12 @@ import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logo.png';
 import EsportivoItens from '../components/EsportivoItens';
+import userimg from './logo/user.png';
 
 function Esportivos() {
     const navigate = useNavigate();
     const tipoUsuario = localStorage.getItem('tipoUsuario');
+    const nomeUsuario = localStorage.getItem('nome');
     const irParaPesquisa = () => {
         navigate('/pesquisa?categoria=Esportivo&status=novo');
     };
@@ -26,7 +28,7 @@ function Esportivos() {
                             <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
                         )}
                     </li>
-
+                    <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
                 </ul>
             </div>
             <EsportivoItens />

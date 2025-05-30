@@ -1,10 +1,12 @@
 import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logo.png'
+import userimg from './logo/user.png';
 
 function Cadastroproduto() {
     const navigate = useNavigate();
     const tipoUsuario = localStorage.getItem('tipoUsuario');
+    const nomeUsuario = localStorage.getItem('nome');
     return (
         <div className='Home_container'>
             <div className="tire-track-loop"></div>
@@ -21,7 +23,7 @@ function Cadastroproduto() {
                             <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
                         )}
                     </li>
-                    <a></a>
+                    <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
                 </ul>
             </div>
             <div className="container-inputs">

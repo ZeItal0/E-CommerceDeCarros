@@ -2,10 +2,12 @@ import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 import logo from './logo/logo.png'
 import UsadosItens from '../components/UsadosItens';
+import userimg from './logo/user.png';
 
 function Usados() {
     const navigate = useNavigate();
     const tipoUsuario = localStorage.getItem('tipoUsuario');
+    const nomeUsuario = localStorage.getItem('nome');
     const irParaPesquisa = () => {
         navigate('/pesquisa?&status=usado');
     };
@@ -26,7 +28,7 @@ function Usados() {
                             <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
                         )}
                     </li>
-
+                    <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
                 </ul>
             </div>
             <UsadosItens />

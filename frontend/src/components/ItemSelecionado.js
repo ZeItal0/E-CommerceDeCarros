@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../pages/logo/logo.png';
 import ListaDeItens from "../components/ListaDeItens";
 import '../pages/home.css';
+import userimg from '../pages/logo/user.png';
 
 function ItemSelecionado() {
   const { id } = useParams();
@@ -11,6 +12,7 @@ function ItemSelecionado() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  const nomeUsuario = localStorage.getItem('nome');
 
   useEffect(() => {
     const fetchItens = async () => {
@@ -43,6 +45,7 @@ function ItemSelecionado() {
           <li><Link to="/populares" className='nav-link'>Populares</Link></li>
           <li><Link to="/usados" className='nav-link'>Usados</Link></li>
           <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
+          <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
         </ul>
       </div>
       <div className='produto-wrapper'>
