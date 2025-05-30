@@ -19,6 +19,22 @@ router.post ('/RegistroUser', async (req , res) => {
     const {nome, email, password, tipoUsuario, endereco} = req.body;
 
     const usuarioExistente = await User.findOne({email});
-    if (usuarioExistente)
+    if (usuarioExistente) {
+        return res.status(400).json({message: 'Email em uso'});
+    }
+
+    const salt = await bcrypt.genSalt(10);
+    const senhaSecreta = await bcrypt.hash(password, salt);
+
+    const novoUsuario = new User ({
+        nome,
+        email,
+        senha: senhaSecreta,
+        tipoUsuario,
+        endereco,
+    });
+    await novoUsuario.save();
+    res.status(201).json({message: 'Registrado com sucesso'});
+
 });
 module.exports = router;
