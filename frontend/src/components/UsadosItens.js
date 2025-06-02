@@ -27,7 +27,7 @@ function UsadoItens() {
     <div className="itens">
       {itens.length > 0 ? (
         <ul>
-          {itens.filter((item) => item.status === 'usado').map((item) => (
+          {itens.filter((item) => item.status === 'usado' || item.status === 'Usado').map((item) => (
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />

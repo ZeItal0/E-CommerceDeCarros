@@ -13,6 +13,7 @@ function ItemSelecionado() {
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const nomeUsuario = localStorage.getItem('nome');
+  const tipoUsuario = localStorage.getItem('tipoUsuario');
 
   useEffect(() => {
     const fetchItens = async () => {
@@ -44,7 +45,11 @@ function ItemSelecionado() {
           <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
           <li><Link to="/populares" className='nav-link'>Populares</Link></li>
           <li><Link to="/usados" className='nav-link'>Usados</Link></li>
-          <li><Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link></li>
+          <li>
+            {tipoUsuario === 'Gerente' && (
+              <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
+            )}
+          </li>
           <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
         </ul>
       </div>
@@ -66,10 +71,10 @@ function ItemSelecionado() {
               <lu className='detalhes-lista'>
                 <h4>Detalhes</h4>
                 <li>Ano {item.ano}.</li>
-                <li>Peso {item.detalhesTecicos?.peso}KG.</li>
-                <li>Max {item.detalhesTecicos?.velociadeMaxima}.</li>
-                <li>Conbustivel {item.detalhesTecicos?.combustivel}.</li>
-                <li>{item.detalhesTecicos?.motorizacao}.</li>
+                <li>Peso {item.detalhesTecnicos?.peso}KG.</li>
+                <li>Max {item.detalhesTecnicos?.velociadeMaxima}.</li>
+                <li>Combustivel {item.detalhesTecnicos?.combustivel}.</li>
+                <li>{item.detalhesTecnicos?.motorizacao}.</li>
                 <li>{item.quilometragem} KM.</li>
                 {/* <li>{item.descricao}.</li> */}
               </lu>

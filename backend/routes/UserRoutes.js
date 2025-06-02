@@ -23,7 +23,7 @@ router.post ('/login', async (req , res) => {
         {expiresIn: '1h'}
     );
 
-    // if(password !== usuario.senha) return res.status(400).json({message: 'Senha incorreta' }); metodo sem usar
+    // if(password !== usuario.senha) return res.status(400).json({message: 'Senha incorreta' }); // essa validacao e sem usar criptografia
     res.status(200).json({
         message: 'Logado com sucesso',
         token,
