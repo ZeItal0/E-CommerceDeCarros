@@ -27,7 +27,7 @@ function PopularesItens() {
     <div className="itens">
       {itens.length > 0 ? (
         <ul>
-          {itens.filter((item) => item.categoria === 'Popular' && item.status === 'novo').map((item) => (
+          {itens.filter((item) => item.categoria?.toLowerCase() === 'popular' && item.status?.toLowerCase() === 'novo' ).map((item) => (
             <li key={item._id}>
               <Link to={`/itens/${item._id}`} className='link-item'>
                 <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />

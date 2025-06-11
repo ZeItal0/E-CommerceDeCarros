@@ -72,7 +72,7 @@ function ItemSelecionado() {
                 <h4>Detalhes</h4>
                 <li>Ano {item.ano}.</li>
                 <li>Peso {item.detalhesTecnicos?.peso}KG.</li>
-                <li>Max {item.detalhesTecnicos?.velociadeMaxima}.</li>
+                <li>Max {item.detalhesTecnicos?.velocidadeMaxima}.</li>
                 <li>Combustivel {item.detalhesTecnicos?.combustivel}.</li>
                 <li>{item.detalhesTecnicos?.motorizacao}.</li>
                 <li>{item.quilometragem} KM.</li>

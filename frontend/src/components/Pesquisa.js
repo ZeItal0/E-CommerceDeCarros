@@ -10,12 +10,14 @@ function Pesquisa() {
 
   const categoriaInicial = queryParams.get('categoria');
   const statusInicial = queryParams.get('status');
+
   const tipoUsuario = localStorage.getItem('tipoUsuario');
+  const nomeUsuario = localStorage.getItem('nome');
+
   const [busca, setBusca] = useState('');
   const [itens, setItens] = useState([]);
   const [resultados, setResultados] = useState([]);
-  const nomeUsuario = localStorage.getItem('nome');
-
+  
   useEffect(() => {
     const fetchItens = async () => {
       const res = await fetch('http://localhost:5000/api/itens');
@@ -27,16 +29,17 @@ function Pesquisa() {
 
   useEffect(() => {
     const filtrados = itens.filter((item) => {
+      const buscaLower = busca.toLowerCase();
       const condicaoBusca =
-        item.marca.toLowerCase().includes(busca.toLowerCase()) ||
-        item.modelo.toLowerCase().includes(busca.toLowerCase());
+        item.marca.toLowerCase().includes(buscaLower) ||
+        item.modelo.toLowerCase().includes(buscaLower);
 
       const condicaoCategoria = categoriaInicial
-        ? item.categoria === categoriaInicial
+        ? item.categoria.toLowerCase() === categoriaInicial.toLowerCase()
         : true;
 
       const condicaoStatus = statusInicial
-        ? item.status === statusInicial
+        ? item.status.toLowerCase() === statusInicial.toLowerCase()
         : true;
 
       return condicaoBusca && condicaoCategoria && condicaoStatus;
@@ -52,7 +55,13 @@ function Pesquisa() {
       <div className='TopColor'>
         <ul className="nav-menu">
           <li><Link to="/home"><img src={logo} alt='Nossa logo' className='ImagemLogo' /></Link></li>
-          <li><input type='text' placeholder='Pesquisa' value={busca} onChange={(e) => setBusca(e.target.value)} className="Pesquisa" /></li>
+          <li><input
+            type='text'
+            placeholder='Pesquisa por marca ou modelo'
+            value={busca}
+            onChange={(e) => setBusca(e.target.value)}
+            className="Pesquisa"
+          /></li>
           <li><Link to="/esportivos" className='nav-link'>Esportivos</Link></li>
           <li><Link to="/populares" className='nav-link'>Populares</Link></li>
           <li><Link to="/usados" className='nav-link'>Usados</Link></li>
@@ -61,7 +70,7 @@ function Pesquisa() {
               <Link to="/cadastroproduto" className='nav-link'>Cadastro veiculo</Link>
             )}
           </li>
-          <li className='colorUser'><img src={userimg} className="ImagemUser" />Ola, {nomeUsuario}</li>
+          <li className='colorUser'><img src={userimg} className="ImagemUser" />Olá, {nomeUsuario}</li>
         </ul>
       </div>
 
@@ -73,7 +82,7 @@ function Pesquisa() {
                 <Link to={`/itens/${item._id}`} className='link-item'>
                   <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='carroimg' />
                   <a id='valorcolor'>{item.marca} {item.modelo} R$ {item.valor}</a>
-                  <a><strong></strong>{item.ano} • {item.quilometragem} km • {item.categoria}</a>
+                  <a>{item.ano} • {item.quilometragem} km • {item.categoria} • {item.status}</a>
                 </Link>
               </li>
             ))}

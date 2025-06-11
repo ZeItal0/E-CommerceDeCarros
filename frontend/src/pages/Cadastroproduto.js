@@ -9,6 +9,8 @@ function Cadastroproduto() {
     const tipoUsuario = localStorage.getItem('tipoUsuario');
     const nomeUsuario = localStorage.getItem('nome');
 
+    const [imagemFile, setImagemFile] = useState(null);
+
     const [form, setForm] = useState({
         marca: '',
         modelo: '',
@@ -19,7 +21,6 @@ function Cadastroproduto() {
         status: '',
         categoria: '',
         descricao: '',
-        imagem: '',
         detalhesTecnicos: {
             motorizacao: '',
             peso: '',
@@ -46,14 +47,28 @@ function Cadastroproduto() {
         }
     };
 
+    const handleImageChange = (e) => {
+        setImagemFile(e.target.files[0]);
+    };
+
     const handleSubmit = async () => {
         try {
+            const formData = new FormData();
+            for (const key in form) {
+                if (key === 'detalhesTecnicos') {
+                    formData.append('detalhesTecnicos', JSON.stringify(form[key]));
+                } else {
+                    formData.append(key, form[key]);
+                }
+            }
+            
+            if (imagemFile) {
+                formData.append('imagem', imagemFile);
+            }
+
             const response = await fetch('http://localhost:5000/api/itens/cadastroProduto', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(form)
+                body: formData
             });
 
             if (response.ok) {
@@ -95,8 +110,6 @@ function Cadastroproduto() {
                 <input type='number' name='valor' placeholder='Valor' onChange={handleChange} />
                 <input type='number' name='ano' placeholder='Ano' onChange={handleChange} />
                 <input type='number' name='quilometragem' placeholder='Km' onChange={handleChange} />
-
-                {/* Detalhes Técnicos */}
                 <input type='text' name='motorizacao' placeholder='Motorização' onChange={handleChange} />
                 <input type='number' name='peso' placeholder='Peso (kg)' onChange={handleChange} />
                 <input type='text' name='combustivel' placeholder='Combustível' onChange={handleChange} />
@@ -106,11 +119,11 @@ function Cadastroproduto() {
             <div className='situacao-radios'>
                 <label>
                     Novo
-                    <input type='radio' name='status' value="Novo" onChange={handleChange} />
+                    <input type='radio' name='status' value="novo" onChange={handleChange} />
                 </label>
                 <label>
                     Usado
-                    <input type='radio' name='status' value="Usado" onChange={handleChange} />
+                    <input type='radio' name='status' value="usado" onChange={handleChange} />
                 </label>
             </div>
 
@@ -132,11 +145,10 @@ function Cadastroproduto() {
 
             <div className='rodape'>
                 <label htmlFor="imagem">Anexar Imagem:</label>
-                <input type="file" id="imagem" name="imagem" accept="image/*" disabled />
-                <small style={{ color: 'gray' }}>Upload de imagem será implementado depois.</small>
+                <input type="file" id="imagem" name="imagem" accept="image/*" onChange={handleImageChange} />
             </div>
         </div>
     );
-};
+}
 
 export default Cadastroproduto;
