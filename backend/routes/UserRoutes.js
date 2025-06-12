@@ -32,7 +32,6 @@ router.post ('/login', async (req , res) => {
         tipoUsuario:usuario.tipoUsuario
     });
 });
-module.exports = router;
 
 router.post ('/RegistroUser', async (req , res) => {
     const {nome, email, password, tipoUsuario, endereco} = req.body;

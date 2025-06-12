@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import car from '../pages/cars/carros-esportivos.png'
 
 function PopularesItens() {
   const [itens, setItens] = useState([]);
