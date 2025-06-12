@@ -50,6 +50,9 @@ function Vendas() {
     }
 
   };
+  const valorComDesconto = item
+    ? (item.valor * (1 - (parseFloat(formData.desconto) || 0) / 100)).toFixed(2)
+    : "0.00";
 
   return (
     <div className="Home_container">
@@ -75,11 +78,11 @@ function Vendas() {
         <div className="container-compra">
           <h2>Confirme os dados da compra</h2>
           {item && (<>
-              <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='selecionadoVenda' />
-              <a>{item.marca} {item.modelo} ({item.status})</a>
-              <a>R$ {item.valor}</a>
-              <a>{item.cor}<span className='cor' style={{ backgroundColor: item.cor }}></span></a>
-            </>
+            <img src={`http://localhost:5000${item.imagem}`} alt={`${item.marca} ${item.modelo}`} className='selecionadoVenda' />
+            <a>{item.marca} {item.modelo} ({item.status})</a>
+            <a>R$ {valorComDesconto} {formData.desconto && `(com ${formData.desconto}% de desconto)`}</a>
+            <a>{item.cor}<span className='cor' style={{ backgroundColor: item.cor }}></span></a>
+          </>
           )}
         </div>
 

@@ -7,7 +7,7 @@
   "cor": "Silver",
   "valor": 120000,
   "descricao": "A Hilux 2012 é uma picape robusta equipada com câmbio manual de 6 marchas e motor 2.0 diesel É ideal para quem busca força, durabilidade e desempenho off-road. Completa em equipamentos oferece excelente estabilidade e capacidade de carga, sendo perfeita tanto para o trabalho quanto para o lazer.",
-  "status": "usado",
+  "status": "Usado",
   "ano": 2012,
   "quilometragem": 98500,
   "categoria": "Popular",
@@ -16,7 +16,7 @@
     "motorizacao": "2.0 230hp",
     "peso": 1700,
     "combustivel": "Diesel S10",
-    "velocidadeMaxima": "230 km/h"
+    "velociadeMaxima": "230 km/h"
   }
 },
 {
@@ -37,7 +37,7 @@
     "motorizacao": "1.0 79hp",
     "peso": 900,
     "combustivel": "Gasolina, Alcool",
-    "velocidadeMaxima": "180 km/h"
+    "velociadeMaxima": "180 km/h"
   }
 },
 {
@@ -58,7 +58,7 @@
     "motorizacao": "1.5 110hp",
     "peso": 1000,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "200 km/h"
+    "velociadeMaxima": "200 km/h"
   }
 },
 {
@@ -79,7 +79,7 @@
     "motorizacao": "1.8 179hp",
     "peso": 1150,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "200 km/h"
+    "velociadeMaxima": "200 km/h"
   }
 },
 {
@@ -100,7 +100,7 @@
     "motorizacao": "2.0 160hp",
     "peso": 1300,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "220 km/h"
+    "velociadeMaxima": "220 km/h"
   }
 },
 {
@@ -121,7 +121,7 @@
     "motorizacao": "2.0 230hp",
     "peso": 1350,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "260 km/h"
+    "velociadeMaxima": "260 km/h"
   }
 },
 {
@@ -142,7 +142,7 @@
     "motorizacao": "1.0 89hp",
     "peso": 800,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "180 km/h"
+    "velociadeMaxima": "180 km/h"
   }
 },
 {
@@ -163,7 +163,7 @@
     "motorizacao": "1.6 115hp",
     "peso": 1500,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "190 km/h"
+    "velociadeMaxima": "190 km/h"
   }
 },
 {
@@ -184,7 +184,7 @@
     "motorizacao": "3.2 360hp",
     "peso": 1200,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "320 km/h"
+    "velociadeMaxima": "320 km/h"
   }
 },
 {
@@ -205,7 +205,7 @@
     "motorizacao": "230hp",
     "peso": 2300,
     "combustivel": "Eletrico",
-    "velocidadeMaxima": "240 km/h"
+    "velociadeMaxima": "240 km/h"
   }
 },
 {
@@ -226,7 +226,7 @@
     "motorizacao": "230hp",
     "peso": 1435,
     "combustivel": "Gasolina",
-    "velocidadeMaxima": "215 km/h"
+    "velociadeMaxima": "215 km/h"
   }
 },
 {
@@ -238,7 +238,7 @@
   "cor": "silver",
   "valor": 450000,
   "descricao": "E um Caminhão!",
-  "status": "novo",
+  "status": "Novo",
   "ano": 2024,
   "quilometragem": 0,
   "categoria": "popular",
@@ -247,7 +247,7 @@
     "motorizacao": "G13 500hp",
     "peso": 9080,
     "combustivel": "Diesel",
-    "velocidadeMaxima": "160 km/h"
+    "velociadeMaxima": "160 km/h"
   }
 },
 {
@@ -256,10 +256,10 @@
   },
   "marca": "Scania",
   "modelo": "Scania R Line",
-  "cor": "green",
+  "cor": "grenw",
   "valor": 430000,
   "descricao": "E um Caminhão!",
-  "status": "novo",
+  "status": "Novo",
   "ano": 2024,
   "quilometragem": 0,
   "categoria": "popular",
@@ -268,6 +268,28 @@
     "motorizacao": "16L 700hp",
     "peso": 9850,
     "combustivel": "Diesel",
-    "velocidadeMaxima": "180 km/h"
+    "velociadeMaxima": "180 km/h"
   }
+},
+{
+  "_id": {
+    "$oid": "684b301589d97e215c337712"
+  },
+  "marca": "ferrari",
+  "modelo": "purosangue",
+  "cor": "red",
+  "valor": 1500000,
+  "descricao": "carro do ano",
+  "status": "novo",
+  "ano": 2025,
+  "quilometragem": 0,
+  "categoria": "Esportivo",
+  "imagem": "/banco/ImagensVeiculos/1749757973104-ferrari-purosangue-divulgacao1.jpg",
+  "detalhesTecnicos": {
+    "motorizacao": "v8 explosion",
+    "peso": 1000,
+    "combustivel": "gasolina",
+    "velocidadeMaxima": "600"
+  },
+  "__v": 0
 }]
